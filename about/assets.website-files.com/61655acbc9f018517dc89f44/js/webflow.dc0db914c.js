@@ -24460,7 +24460,7 @@
                 !h &&
                 ((e =
                   e ||
-                  ((r = t('#').attr(
+                  ((r = t('<a class="w-webflow-badge"></a>').attr(
                     "href",
                     "https://webflow.com?utm_campaign=brandjs"
                   )),
