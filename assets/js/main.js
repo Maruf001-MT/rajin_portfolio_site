@@ -14113,7 +14113,7 @@
             i = document,
             a = t("html"),
             o = t("body"),
-            s = ".w-webflow-badge",
+            s = ".#",
             l = window.location,
             h = /PhantomJS/i.test(navigator.userAgent),
             c = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange";
@@ -14132,7 +14132,7 @@
         return r.ready = function() {
             var r, n, o, s = a.attr("data-wf-status"),
                 p = a.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(p) && l.hostname !== p && (s = !0), s && !h && (e = e || (r = t('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs"), n = t("<img>").attr("src", "#").attr("alt", "").css({
+            /\.webflow\.io$/i.test(p) && l.hostname !== p && (s = !0), s && !h && (e = e || (r = t('<a class="#"></a>').attr("href", "#"), n = t("<img>").attr("src", "#").attr("alt", "").css({
                 marginRight: "8px",
                 width: "16px"
             }), o = t("<img>").attr("src", "#").attr("alt", "."), r.append(n, o), r[0]), f(), setTimeout(f, 500), t(i).off(c, u).on(c, u))

@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>TED Talks by Chris Anderson</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body style="background-color: #242424; color: white;"><article id="10465b90-e536-4cf1-b244-1c3c3d37b120" class="page sans"><header><h1 class="page-title"><strong><strong>TED Talks by Chris Anderson</strong></strong></h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><td><span class="selected-value select-value-color-green">Pre-processed</span></td></tr></tbody></table></header><div class="page-body"><h3 id="02394c0d-25fa-4c1e-acd1-16780ce7465e" class=""><strong>PUBLIC SPEAKING</strong></h3><p id="d337aa70-6a05-4f83-8e02-a5db232ce947" class="">Anderson explains that there is no simple formula for public speaking, there is no single way to go about it and be sure you are giving a great talk. He acknowledges that this is simply due to the variety of speakers and audiences in the world, you’re never going to appeal to everyone and you’re never going to speak exactly the same as someone else. Rather than suggesting exactly how you should give a talk, Anderson aims to offer a bunch of tools you can use to improve your speaking ability.</p><blockquote id="03da1285-52b9-4e27-8337-e9e4e86824e0" class="">”Your only real job in giving a talk is to have something valuable to say, and to say it authentically in your own unique way.”</blockquote><p id="537d4aa3-de18-42cd-9315-1323b000b348" class="">Anderson explains that when you are giving a talk, you need to be tapping into certain emotions. Whether that be empathy or excitement or perhaps sharing a dream or some new knowledge. If you can tap into the right emotions, you’ll be able to capture the attention of your audience and hopefully give them a new perspective on a topic they may not have known much about.</p><blockquote id="8020c20e-f91d-4ad4-8afa-38127ab128b2" class="">”Done right, a talk can electrify a room and transform an audience&#x27;s worldview.”CLICK TO TWEET</blockquote><h2 id="e78ce144-97b0-434a-86e5-3e66eeb2df3e" class=""><strong>SPEAKING AS A LEARNABLE SKILL</strong></h2><p id="cb2f841a-8f0e-48be-b3a8-44c521d1d0e5" class="">Like many things, people often assume that public speaking requires a certain skill set that you either have or you don’t have. But Anderson points out that regardless of your nerves or fear, anyone can build the skill of presentation literacy. He explains that even if your confidence is low and you are incredibly nervous there are steps you can take to improve your ability.</p><p id="cbc3ead3-6b32-41c6-b1ad-e9fa97d1409c" class="">One of the key points Anderson makes is that as a speaker you’re never going to be Winston Churchill or Nelson Mandela, so stop comparing yourself. The only thing you can be as a speaker is you. Don’t try to be anything you’re not, don’t pad your speech with intellectual jargon if really you’re an artist. And Anderson reminds us not to judge your success on the applause at the end. Just because everyone wasn’t standing up and cheering doesn’t mean your speech wasn’t a success.</p><blockquote id="7259012e-1f99-4641-9e59-f6fc425a186e" class="">”Conversational sharing can work just as well. In fact, for a lot of audiences. it&#x27;s better.”</blockquote><p id="577b3712-b425-48a4-a9c1-8265e6185080" class="">Anderson explains that these days you really need to know how to present to a crowd. It’s not a matter of choice but a necessity. And it doesn’t matter what the size of the audience is, but if you can develop some key skills, and be yourself, then you’ll find yourself succeeding.</p><h2 id="59d0ce6f-cd55-40d6-91d2-4dce9df1f70a" class=""><strong>IDEAS</strong></h2><p id="732deb2e-d6f9-4e7d-89cd-d471237803fb" class="">Anderson explains that the idea is the gift you are giving to the audience in every great talk. As a speaker, you should set out to share something that you are truly passionate about, something that you care about, and share your passion with the audience. Anderson considers this message to be your idea. He explains that by sharing your idea you should be providing the audience with a mental image and idea, something that has affected them, something that they can remember, reflect on and hopefully share with others.</p><blockquote id="b26fc113-4575-4b78-9732-9dd96f16f7f0" class="">”Take something that matters deeply to you and to rebuild it inside of the minds of your listeners.”</blockquote><h3 id="0bffa059-8dc7-474b-9e46-7d1365811f35" class=""><strong>Starting point</strong></h3><p id="5e689aec-4d14-44fa-bfe0-db1fa1e47b28" class="">Anderson explains that your starting point has to be your idea. An idea can be anything from an image, a story, a how-to, your dream for the future or even a simple reminder of something that important to you.</p><blockquote id="56aa955a-48d1-41cf-96a4-c579c0beb631" class="">”Many people massively underestimate the value of their work, and their learning, and their insights. More likely, you have far more in you worth sharing than you&#x27;re even aware of.”</blockquote><p id="cc3d9474-5609-499d-b47b-62feb781b517" class="">Anderson explains that as a speaker, you have something powerful to share, something that nobody else has, and that’s your experiences and your life. Nobody else experiences things exactly as you do so you can start there. Audiences are enthralled by personal stories and anecdotes, even if the lesson is one they’ve heard before, your perspective is original and exciting.</p><h3 id="6706152f-c874-4fdc-a84f-01020a8b2429" class=""><strong>Procrastination</strong></h3><p id="123606ee-9afa-42bb-be20-4945561bb93f" class="">Anderson explains that as humans, we are all expert procrastinators. But when the opportunity to speak publicly arises, use this as your motivation to research and learn about the topic that’s always interested you, but you’ve never pursued out of pure laziness.</p><p id="7e15e20e-8b31-43ad-bbd4-ab3ab2a9da7c" class="">Use the opportunity to drive you and find your passion, you might know a bit about something you think would be a good topic. Start there and truly immerse yourself in the topic, learn all the angles and begin to curate your story.</p><h3 id="09e4c477-74f6-4ef3-a079-ec42a2c9b71b" class=""><strong>Language</strong></h3><p id="04a702bc-6d60-4ec7-9496-267397c8731d" class="">So, if you’ve followed Anderson’s advice, you’ve started with an idea, you’ve done plenty of research and now you have a story to tell, something meaningful to share with your audience. Anderson reminds us that the goal is to re-create your idea effectively in the mind of your audience. And that can be an intimidating concept.</p><p id="4a2c4a3b-fae5-4d28-9e8b-34065cc5928f" class="">However, Anderson explains that it’s quite simple. Using language you can brilliantly tell a story with a certain spin and the right amount of detail, and the audience will be on exactly the same page as you. You can connect with strangers in a room through the common tool that you share, language.</p><blockquote id="a403b97e-8d48-48f6-8c2e-aabe4602647f" class="">”You can only use the tools that your audience has access to. If you start with only YOUR language, YOUR concepts, and YOUR assumptions, you will fail. So start with theirs.”</blockquote><p id="3665497c-1356-485c-a741-8245d16ec61d" class="">Another note that Anderson makes here, is that you need to consider what your audience’s potential knowledge or understanding is on your topic. You can’t simply dive into the deep end of a rather intricate subject and expect them to keep up. Consider where you were at the beginning of your knowledge journey and take them down the same path. You can’t make jumps without explaining the process.</p><h2 id="cf0634ea-8fc3-481e-a8e4-ae9b63e54cd4" class=""><strong>WHAT TO AVOID AND COMMON TRAPS.</strong></h2><p id="a41fa0c6-d62b-430c-8c54-8292e9bd00eb" class="">Anderson explains that there are 4 styles of a talk that you need to avoid, despite how easy they may be to fall into. These styles are; the sales pitch, the ramble, the org bore and the inspiration performance. We’ll discuss these in a little more detail below:</p><h3 id="974b8ee2-8b1c-426a-afe2-0ee6f9391eaf" class=""><strong>The sales pitch</strong></h3><p id="96cd4d8d-8960-4c94-a071-91cb8dfacf58" class="">Anderson explains that as a speaker, you are there to give back to your audience. But some speakers make the mistake of planning to take something from the audience. Being generous as a speaker is going to be well received by the audience, you really don’t want to look like a self-promoter.</p><h3 id="77c07bd1-6c90-45c8-9c30-0257b5744b33" class=""><strong>The ramble</strong></h3><p id="6ec41f3f-22a4-4d1a-b143-59d685f0e606" class="">TED talks are designed to be short, they are only approx. 18 minutes in length, there’s not a lot of time. For this reason, you really have to get to your point, consider your audience’s time as precious and don’t waste it. Rambling is not going to sit well with an audience and you’ll likely lose their attention. So stick to the point and make sure you present your idea in the best way possible.</p><h3 id="1a19683d-ce85-42c4-ba09-8ac61f22036e" class=""><strong>The org bore</strong></h3><p id="8e2feada-6c18-47f6-90e4-0ed67dd30bd7" class="">Anderson explains that you make work for an organisation you are truly proud of, the history of the company may be fascinating to you, whether you are an NGO or a laboratory. However, the audience doesn’t want to hear about the timeline of a company. They want to hear about the work that you do, the ideas that the company has, the mission. Don’t focus on the organisation or the products, think big picture mission statements.</p><h3 id="2727549f-6743-4f55-a66e-9ff877b71a22" class=""><strong>The inspiration performance</strong></h3><p id="56c9077e-c8d9-42ed-8893-bde410b9e29c" class="">Everyone wants to be an inspiration, and as an audience member, you are looking to be inspired. But Anderson explains that there’s a power within being inspirational and you have to be careful where you tread. Many speakers are driven by the promise of fame, adoration and they all want to be considered an inspiration. But Anderson points out that inspiration is something to be earned, and it’s only going to be earned when it’s not the prime motivation. You can’t ‘act out’ being inspirational. It needs to be selfless and genuine. So don’t walk in there aiming to be an inspiration. But, if you’re true to yourself and your message, you mind just be.</p><p id="94ab99a5-01ab-4790-a539-495dfd3cceeb" class=""><strong>DOWNLOAD THE TED TALKS PDF FOR FREE!</strong></p><p id="ddeeba92-ab9e-43fe-82b2-6807da59cead" class=""><a href="https://paulminors.com/resources/book-summaries/?summary=TED-Talks"><strong>DOWNLOAD PDF</strong></a></p><h2 id="5092352a-3d27-481d-9727-2b80bb9ce1f0" class=""><strong>THE POINT</strong></h2><blockquote id="9a0df166-464b-42c9-9e13-cb0bf6e34b9a" class="">”The point of a talk is to say something meaningful. But it&#x27;s amazing how many talks never quite do that. They leave the audience with nothing they can hold on to.”CLICK TO TWEET</blockquote><p id="d6d4f6e9-8f31-4582-9a65-b408b0047ae9" class="">Anderson explains that if you approach a speech without a comprehensive plan you may end up leaving the audience confused and unsure what the real meaning behind your talk was. There needs to be what Anderson calls a through-line: something to connect your speech together and a common theme throughout your narrative.</p><p id="310fd674-858d-43ed-a981-921d2a609415" class="">However, don’t get fooled into thinking a through-line means you can only tell one story or only talk about one topic. Anderson explains that you just need to be able to connect the stories and topics. There needs to be a seamless journey that the audience can take, without any abrupt leaps or jumps. Take the audience through a straightforward journey, from beginning to end. And hopefully, everyone will reach the destination you intend.</p><h3 id="affb938d-afd0-4073-aa8d-2b335c34752d" class=""><strong>The through-line</strong></h3><p id="e106f9f5-f6b9-40ad-9223-579619faef84" class="">Figuring out exactly what your through-line is, is a necessary step in the speaking process. Anderson suggests beginning with learning as much about the audience as you possibly can. You need to understand what their knowledge is, what they are passionate about and what their beliefs and morals might be. Often, speakers are left with too much to say and a limited time. And many fall into the trap of trying to cram it all in but shorten the explanations or cut out some detail. Anderson explains that you cannot simply condense everything and still deliver a good speech. Here are two tips Anderson shares when it comes to constructing your through-line:</p><ol type="1" id="9ba2f878-c7ec-4c60-a43c-268c105aaaa6" class="numbered-list" start="1"><li>Show why it matters, what’s the question, problem or experience?</li></ol><ol type="1" id="a32c57b8-7533-4d2c-95fe-f89ddc621b15" class="numbered-list" start="2"><li>Flesh out each point you make with real examples, stories, and facts.</li></ol><p id="95f69c75-a9ef-4397-9c6e-283fbcc3a87a" class="">Anderson suggests considering no more than three connected topics in order to properly construct your through-line. You need to be able to provide sufficient explanations and detail for each topic. And make sure everything links back to the through-line, leave no anomalies.</p><h2 id="b1078df6-c2aa-4a77-a8c4-6e385b21d9c9" class=""><strong>MAKING A CONNECTION</strong></h2><p id="2ca87761-f645-4258-8055-9e1e07eaa52c" class="">Anderson stresses the importance of getting personal with your audience. Let them know exactly who you are. Don’t forget to make eye contact, staring at the wall at the back of the room is going to forge a barrier between you and the audience. Look them in the eye. Be vulnerable and discard your ego. This isn’t self-promotion. Make your audience laugh, get them to enjoy themselves and let loose a little. And tell a personal story, let them into your life.</p><p id="82ae2727-ace0-40a4-9abc-7d2084a642a0" class="">Anderson explains that when narrating a story, it’s important that you remember the following 4 things:</p><ol type="1" id="14f0796a-64f6-4340-b038-5d73560fe5f2" class="numbered-list" start="1"><li>Develop a character the audience can relate to.</li></ol><ol type="1" id="36de6715-ff5a-4fa3-858e-996c57c77176" class="numbered-list" start="2"><li>Ensure your story has an element of tension.</li></ol><ol type="1" id="21d3abe7-5326-45d9-9301-73221187235c" class="numbered-list" start="3"><li>Detail is important, but not too much.</li></ol><ol type="1" id="ab2dbba8-3aa6-49a5-8f1a-c8bfed9873a0" class="numbered-list" start="4"><li>Finally, you need a conclusion, finish your story properly (no cliff-hangers) whether it be a relief, emotional, funny or moving.</li></ol><blockquote id="b2c7ffbd-5329-4a28-8510-4595fd7bb293" class="">”Stories resonate deeply in every human. By giving your talk as a story or series of related stories you can greatly increase your connection with the listeners. But, please: let it mean something.”</blockquote><h2 id="a57077f4-2b6a-4d09-9214-ed5d07dc9344" class=""><strong>EXPLAINING</strong></h2><p id="527b6e00-a43c-47d7-895a-35aab7b263e0" class="">When explaining new concepts or ideas, consider the following:</p><ol type="1" id="00a7eb8c-34b3-40b4-a091-27ff31cd6dc2" class="numbered-list" start="1"><li>Start where the audience is.</li></ol><ol type="1" id="cb02f156-4714-4d78-a038-797775f67285" class="numbered-list" start="2"><li>Light the fire called curiosity.</li></ol><ol type="1" id="5f101bf5-a354-4fed-aa69-c0be0de1b7ef" class="numbered-list" start="3"><li>Build in concepts one by one.</li></ol><ol type="1" id="33138ba3-5ea7-4cca-bf5c-d72dee8255ab" class="numbered-list" start="4"><li>Use metaphors.</li></ol><ol type="1" id="a0165e14-46b0-4af4-9992-73595f251aa4" class="numbered-list" start="5"><li>Use examples.</li></ol><p id="f69ff51b-fdbe-4e0d-a676-10fb29c42a61" class="">Remember, that just because you know everything there is to know about your topic, the audience doesn’t necessarily have the same understanding as you. So take your time to explain the concepts. Anderson recommends trying to remember where you were in the beginning, what did you know before you really started? Just because it seems simple to you, doesn’t mean everyone shares the same knowledge.</p><h2 id="57791af9-4302-4633-aaba-3510802bfe30" class=""><strong>PERSUASION</strong></h2><blockquote id="8a40aa9d-690e-488d-9ac1-2d05249c8aa9" class="">”Persuasion means convincing an audience that the way they currently see the world isn&#x27;t quite right. And when this works, it&#x27;s thrilling for both speaker and audience. It requires taking down the parts that aren&#x27;t working, and rebuilding something better.”</blockquote><p id="70dcbf8a-c525-440c-acb6-78709cd981e3" class="">Anderson explains that the first part of persuasion is to prime the audience. Once you’ve primed your audience you’ll find it easier to deliver your argument with Reason. Reason, is the next step and makes it easy to deliver your conclusion with certainty.</p><p id="c4b28958-8dfc-4080-ad3e-18bf9292b536" class="">Anderson has established a simple formula for priming your audience and enforcing reason.</p><blockquote id="ae10c13c-6446-4b8f-8831-0f83b3c3c593" class="">”If X is true, dear friends, then, clearly, Y follows (because every X implies a Y).”</blockquote><p id="46837f2d-e784-4be4-9523-5c16027ffd57" class="">A few other helpful tools for persuasion are; having a humorous element early on to break the ice. Having a detailed anecdote and useful, straightforward examples. If possible, validate your idea further with a third-party and finally, if applicable, use visuals.</p><h2 id="5a6bfc98-dbeb-4e06-9ebc-27fb638e62e7" class=""><strong>SHOW THEM</strong></h2><p id="8302ae77-3e65-45e6-9183-b639bd703ac4" class="">So you have an idea, how do you share your idea with the audience in the most effective way? Anderson explains that it’s simple, you just have to show them. And here’s a few ways you can do that:</p><ul id="dc0d6962-582c-4e7c-80d7-c530511e46fe" class="bulleted-list"><li style="list-style-type:disc">The wonder walk. Take your audience on a journey or a walk through your work, start at the beginning and explain one by one. Use images such as slides, photos or videos.</li></ul><ul id="e5067754-96aa-4f84-99b7-c442b8c56dfc" class="bulleted-list"><li style="list-style-type:disc">The dynamic demo. Physically demonstrate your idea. Whether it’s a new product, new technology or a new way to do something, show the audience exactly how it works.</li></ul><ul id="e2310edd-28ee-48fe-a8dc-adaa4c07f4ed" class="bulleted-list"><li style="list-style-type:disc">The dreamscape. Help the audience visualise your dreams with images, drawings, demos or powerful words. Either literally or metaphorically, paint the audience a picture of what you want the future to look like, let them in on your dreams in the most visual way possible.</li></ul><h2 id="7e1351ae-2cd2-470f-b18f-bb7ef817958c" class=""><strong>WHEN TO USE VISUALS</strong></h2><p id="bafe9608-8107-4868-bf36-62c6e8821c75" class="">It’s easy to default to making slides to back up your speech. However, Anderson believes that often slides do more damage than good, they take the attention off you and the audience may lose track. However, visuals can be an effective tool in presenting your idea, just ensure you use them correctly. Anderson explains that visuals are useful in three circumstances; when you are revealing something, to explain something and to add aesthetic appeal.</p><p id="01893c3d-1c47-46c0-9d24-a2210119bee8" class="">Make sure no slide ever has more than a single idea or image. They are not designed to be a brainstorm of ideas. Short and sweet is key. Slides and visuals are only there to back up your words, they are designed to add descriptions and explanations that can’t be done with words. Don’t use a slide as a way of repeating what you say. Anderson believes that they have to offer something more.</p><h2 id="41d737cc-80eb-4a93-b288-9d550a66481c" class=""><strong>SCRIPTS AND MEMORISING</strong></h2><p id="84ca13d2-7931-4787-bf91-37a70e73173b" class="">So with a speech approaching, you’re bound to reach the point where you need to decide if you are going to write out every word you plan to say as a strict, or if you want to have a structure established and written down but speak off the cuff. Anderson explains that both approaches have both positives and negatives, we’ll discuss these a little further:</p><h3 id="3439cb7c-1989-441a-a003-dfa1851e803a" class=""><strong>Scripts</strong></h3><p id="4ad4bd34-fe5e-495f-bbb5-726d7aa26fab" class="">If you choose to write a script, then you’ll know that everything you need to say is written down, you won’t waste any time trying to remember what’s next. However, it needs to be practiced and delivered in a way that it doesn’t sound scripted. Anderson explains that referring to your script every now and then is OK, but you need to look up at the audience and make eye contact as regularly as possible. Don’t look down the whole time. Finally, Anderson explains that the best way to script is to use bullet points. Don’t have pages of paragraphs, this will only set you back when you glance down to check where you are up to. Bullet points will help you keep up to speed with where you are and whats coming up next.</p><h3 id="9eea4201-fef8-44a4-bbd2-b9e759a7b450" class=""><strong>Unscripted.</strong></h3><p id="c26b24a1-1bf8-451c-ac74-d1d2d4dc6234" class="">Anderson explains that the number one benefit of being unscripted is that you can come across fresh and real, the audience will feel as if you are having a real conversation with them rather than delivering a speech. However, problems can arise. Anderson explains that the pressure can get to you and when you’re explaining a critical point, you may struggle to find the words. You also risk leaving out information altogether, and you can’t be certain about the timing. Timing is especially important when there is a time limit allocated. You don’t want to be halfway through your idea only to be told that time is up.</p><h3 id="0d0aa704-be78-422b-ad78-1f6c560f3df5" class=""><strong>The importance of rehearsals</strong></h3><p id="89150149-da86-419b-aa93-fa5581845a57" class="">Anderson stresses the importance of rehearsing and the benefit this will have on your talk. Not rehearsing is one of the biggest mistakes you can make. And don’t rehearse once or twice, do it over and over until you are confident. Rehearse in front of other people and work on completing your story within your defined time. Ask for feedback and take this on board.</p><blockquote id="3f52dc37-2f2d-4e0e-8b37-77d64cc27ff3" class="">”Your goal is to end up with a talk whose structure is second nature to you so that you can concentrate on meaning what you say.”</blockquote><h2 id="dbac794f-c3dd-41ad-9124-5c2721379529" class=""><strong>BEGINNING AND ENDING</strong></h2><p id="cca52f39-29e3-486f-9f87-1698982d650e" class="">First impressions count. And it’s important to begin your talk with a strong opening. Anderson suggests using drama or curiosity, perhaps using a tempting tease. Or try using a slide or video that is compelling and powerful.</p><p id="09408bea-c341-4a11-9fdd-b8fa3a10f8d5" class="">Almost as important as the opening is the ending, you have the opportunity to leave the audience with a powerful statement or message, so don’t simply stop talking. Make sure you have a powerful conclusion. Consider offering the audience a call to action, or asking for a commitment from them. Anderson explains that creating a detailed vision and linking the ending right back to the beginning can be effective.</p><h2 id="20513536-3c27-4aa7-926a-81d8857aa6de" class=""><strong>NERVES</strong></h2><p id="7776e187-9e30-4828-b68a-7e51e876df56" class="">The best of us get nervous, Anderson has a few tips to control the nerves on speaking day:</p><ul id="3d09a99f-f0bf-4b69-8f84-8481c6f4db3e" class="bulleted-list"><li style="list-style-type:disc">Use your fear as motivation</li></ul><ul id="a3712e86-54f7-425e-914b-13edd65e2dbc" class="bulleted-list"><li style="list-style-type:disc">Breathe</li></ul><ul id="d347525b-0c5f-447c-b8d7-00af451c1580" class="bulleted-list"><li style="list-style-type:disc">Drink Water</li></ul><ul id="d2972ab8-5a4a-4094-9b8d-2d785f68b81f" class="bulleted-list"><li style="list-style-type:disc">Avoid an empty stomach</li></ul><ul id="26c03038-e104-40e8-8d4e-e552f961a6d2" class="bulleted-list"><li style="list-style-type:disc">Remember the power of vulnerability</li></ul><ul id="a002afd2-470d-47b1-96a0-c700adcb1bf1" class="bulleted-list"><li style="list-style-type:disc">Find ‘friends&#x27; in the audience</li></ul><ul id="f079c83e-9be2-474f-8b63-3567068cc545" class="bulleted-list"><li style="list-style-type:disc">Have a backup plan</li></ul><ul id="065179b7-8a1f-4e42-9e51-b7dfbd7df258" class="bulleted-list"><li style="list-style-type:disc">Focus on what you&#x27;re talking about</li></ul><p id="5d70480b-2c15-42f3-b24f-33b5a8a8691b" class="">Being prepared is also essential. Anderson explains that sometimes just knowing that there is a script and detailed notes available is all you need. You may have your entire speech memorised but having a back up is really important for your mental nerves. You can also use your own slides as prompts, they can help you know whats coming up next. Consider using small note cars that you can hold in your hand.</p><h2 id="d25432ad-a6cc-40ab-afbd-6baccc4a9b29" class=""><strong>YOUR VOICE</strong></h2><p id="62626264-303c-41e3-9c65-7f38732de08d" class="">Anderson explains that one of your most powerful tools in delivering a good talk is your own voice. Use your voice to tell the story, using variety in tone, pace and pauses to convey the emotions needed. Anderson points out that if you have chosen to go with a script, it’s a good idea to highlight or underline the key points and phrases that you wish to emphasise. Tone is so important and can really change the way the audience perceives your message. Finally, Anderson stresses the importance of considering your speaking pace, make sure it’s mostly at a natural conversational pace, with increases and decreases for emphasis.</p><blockquote id="92382872-26d0-48bb-992f-6835e11a2c3d" class="">”Speak with meaning. And don&#x27;t be afraid to let emotions out a little as you speak.”</blockquote><h3 id="e6d76e60-69a9-4e5a-afb2-bdd2aee70568" class=""><strong>Body language</strong></h3><p id="464b5c7c-3072-4404-a534-f3b6662a12ff" class="">Further to your own voice, you can use your body to help tell your story. By standing tall and central, with your weight equally distributed between your two feet, your presences is immediately more powerful than someone who looks down or shifts from left to right. Your hands can be story-telling tools, emphasising key points and moments. Anderson points out that some people feel more comfortable moving around. If this is the case walking around is good, but ensure that the walk is at a natural speed and pace.</p><blockquote id="53c938ca-ec2b-4ab2-a7df-f917b967b95d" class="">”Whatever it is you pursue, if you truly go after it, predict two things: – Yes, you&#x27;ll find a meaningful form of happiness – You&#x27;ll discover something worth saying. And then what? Well then, of course, you must SHARE it, using all the passion, skills and determination you can muster.”DOWNLOAD THE TED TALKS PDF FOR FREE!DOWNLOAD PDF</blockquote><h2 id="30ea4ef2-b36e-4a21-af60-48317711aa82" class=""><strong>CONCLUSION</strong></h2><h3 id="50febf25-b0ea-4e5b-969b-cd398e779b3e" class=""><strong>Key takeaways</strong></h3><ul id="d13b14c3-eddf-4780-b252-7f6f1cf5ea69" class="bulleted-list"><li style="list-style-type:disc">Speaking is a learnable skill, anyone can do it.</li></ul><ul id="b47aa759-1782-43f5-9dca-cf79abb07fd4" class="bulleted-list"><li style="list-style-type:disc">You have to begin with an idea.</li></ul><ul id="2459a960-a85e-4d95-b4ac-fca4a5cd9846" class="bulleted-list"><li style="list-style-type:disc">You aim is to have something important to say, to capture an audience, and perhaps change their perspective on a topic.</li></ul><ul id="bd37bc3a-5332-47c0-bea9-394253e18085" class="bulleted-list"><li style="list-style-type:disc">Remember that even though you may know a lot about your topic, your audience’s knowledge and understanding may be limited. Start from the beginning so they can grasp your concepts.</li></ul><ul id="3108a516-e8e7-459e-8782-d6ff1415db88" class="bulleted-list"><li style="list-style-type:disc">Avoid presenting a sales pitch, you’re not selling anything. And don’t ramble.</li></ul><ul id="661bd5ac-65e8-40b9-b30c-9c0aaa7b1536" class="bulleted-list"><li style="list-style-type:disc">Your speech doesn’t have to have only one single idea or story. But there has to be a clear connection. Establish your through-line and build your narrative around that.</li></ul><ul id="20ed557e-796c-414c-8a59-6a8376ff6653" class="bulleted-list"><li style="list-style-type:disc">Visuals can be a useful storytelling aid, but only if they offer something you can’t put into words.</li></ul><ul id="e4ed9565-237a-4954-9151-91161ff2f899" class="bulleted-list"><li style="list-style-type:disc">Use your voice and body language to emphasise points and help tell the story.</li></ul><h3 id="c26858e7-764b-4b49-b7be-382e71e54be8" class=""><strong>Action Steps</strong></h3><ul id="b3279581-5e3f-47b5-a78e-c23545ef54cd" class="bulleted-list"><li style="list-style-type:disc">Look for an opportunity to do some public speaking, instead of shying away from the chance, decide to give it a go. Consider asking local community groups if they’d like a guest speaker and give it a shot.</li></ul><ul id="070dfa83-83c1-4fe1-835b-ac9764ff1dfb" class="bulleted-list"><li style="list-style-type:disc">Consider your ideas, develop these further through research. Whether it be your own experiences or sharing a new idea, you have a story worth telling so don’t forget it.</li></ul><ul id="539ebb75-9445-4827-b317-747f250f26a0" class="bulleted-list"><li style="list-style-type:disc">If you have the opportunity to speak in front of a crowd, don’t forget to rehearse. Start by rehearsing in front of a mirror, then ask some friends to take a listen and provide feedback.</li></ul><ul id="a20d33e6-3312-4ca0-ba90-c6336589e9b2" class="bulleted-list"><li style="list-style-type:disc">Consider whether you would prefer to write a script or speak more freely. Try both approaches and see what works for you.</li></ul></div></article></body></html>

@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The 7 Habits of Highly Effective People by Stephen Covey</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6950b94d-acff-4788-b957-f56e35fe8d38" class="page sans"><header><h1 class="page-title"><strong><strong>The 7 Habits of Highly Effective People by Stephen Covey</strong></strong></h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><td><span class="selected-value select-value-color-green">Pre-processed</span></td></tr></tbody></table></header><div class="page-body"><h3 id="d26ad02e-8713-49a7-8f23-bd5f07340020" class=""><strong>PARADIGMS, PARADIGM SHIFTS AND PRINCIPLES</strong></h3><blockquote id="5252ac07-0e5d-45eb-bee8-f79c36915de7" class="">”In order to change a situation, you first have to change yourself. And to change yourself effectively, you first have to change your perception.”</blockquote><p id="87648917-5992-4e4e-8ef7-2e0870a8a99d" class="">Covey explains that a paradigm is the way that you “see” the world, the way you perceive the world, understand it’s workings and interpret events. Our behaviours and attitudes are a direct result of our paradigms. Without these, we simply have nothing to base ourselves on, Covey explains that we would lack integrity. Paradigms and our behaviours cannot be mutually exclusive.</p><h3 id="7054dc6a-8f40-4531-ba21-53e0c7ee7324" class=""><strong>Can paradigms shift?</strong></h3><p id="37c1a811-322d-47a1-b7b1-0641f524d275" class="">Now that we understand what a paradigm is, the next question is can paradigms change over time? Covey explains that they absolutely can, and it’s almost inevitable that they will. Sometimes the changes can be considered positive or negative and some might be instant whereas others happen over a long period of time. Every time a paradigm shifts you are experiencing a powerful change, the way you see the world and the way you behave is probably changing.</p><blockquote id="2dd80911-ff53-461d-835f-0abf35456c72" class="">”A Paradigm Shift is the “a-ha” experience associated with finally perceiving or understanding some aspect of the world (or a circumstance) in a different way.”</blockquote><h3 id="d68ee255-8a99-4164-825f-c7d18d6339ef" class=""><strong>Principles and paradigms</strong></h3><p id="3db50536-83e0-468b-a8b7-a207906b0eb9" class="">A principle, on the other hand, is something that Covey describes as a natural, unbreakable law. He explains that we don’t necessarily look at our lives in relation to a paradigm or map. The paradigms are what Covey calls a ‘subjective reality’ – the way we can describe the territory. However, it is the ‘lighthouse’ principles that are the ‘objective reality’ – these principles are the key to growth and our overall happiness. You can see these principles and laws everywhere you look, any family, community, city or society at any time in history has had their own natural laws.</p><h3 id="88b0019c-4c79-419a-b1ab-a12050bc4ef7" class=""><strong>Problems</strong></h3><p id="3000bc17-c38e-4263-bfab-ffa2db610cb7" class="">Covey explains that the way that we see problems that we face, is actually the problem. He explains that if you look within, and analyse the real problem, it’s not something that can be solved on the surface. It’s more to do with what we think about the problem. In order to ‘solve’ the problem, we need to adjust our thinking and find a new level of thinking. Concerns are deeper issues, they are never as shallow as they might first appear.</p><h2 id="d74589e2-6045-405a-ba29-f192cc528939" class=""><strong>THE 7 HABITS</strong></h2><blockquote id="e45993fc-7d44-4ff8-9492-06deb53b2f9e" class="">”A habit is the intersection of knowledge, skill, and desire. Knowledge is the theoretical paradigm, the what to do and the why. Skill is the how to do. And desire is the motivation, the want to do. In order to make something a habit in our lives, we have to have all three.”</blockquote><h3 id="c1e795f3-61b9-4184-b8f9-6c94f16a287a" class=""><strong>HABIT 1: PROACTIVITY</strong></h3><p id="bde7ad89-c97d-4b31-9dbf-75a4d66c78a5" class="">The dictionary definition of proactive is: (of a person or action) creating or controlling a situation rather than responding to it after it has happened. Covey explains that being proactive is about taking on a responsibility, it’s more than just using your initiative. He explains that it’s important to remember that our decisions determine our behaviours, not the conditions we are in. And to be proactive means to take on a responsibility and making things happen, not waiting for things to happen to you.</p><p id="99c4e30b-1cdd-4b61-970c-6c0a3c05c312" class="">When Covey breaks down the word ‘responsibility’ into “response-ability” it becomes clear that you have the ability and the power within you to choose how you will respond to any event or action. It’s nothing to do with conditions, but to do with how you choose to behave. Making a decision to respond in a certain way should be a conscious choice and be a choice that reflects your values and paradigms regardless of your conditions.</p><h3 id="76387039-0d8a-4733-afb9-7a6d3b9b6553" class=""><strong>Proactive people</strong></h3><p id="fd828b50-2e2d-476d-99c8-1ae157949d1b" class="">Covey explains that we are designed to be proactive, it’s actually in our nature. However, too often we give too much power to our conditions and let them control us, rather than making our own decisions. And this is when becoming reactive, rather than proactive becomes a habit. For example, someone who is reactive will feel affected by the weather, on sunny days they will feel good and get things down, but when it’s gloomy and dark, they’ll react by feeling down and unproductive. In comparison, someone who is proactive will feel and act the same no matter the weather, the conditions have no effect on their feelings or how they behave.</p><blockquote id="9c40675c-23ae-4ee1-bdf8-6ea840423d27" class="">”Proactive people are value driven; and if their value is to produce good quality work, it isn’t a function of whether the weather is conducive to it or not.”</blockquote><h3 id="cf4ac44f-76fa-4b9e-b7db-44909e5c5792" class=""><strong>Values</strong></h3><p id="4628d0c7-0815-4e78-ae12-688ba720716c" class="">Values drive proactive people, and Covey explains that these values are always carefully considered, individual and chosen specifically by each person. Of course, external factors will always influence a person, factors such as physical strengths or limitations, social aspects, and psychological states. But Covey explains that a proactive person will be in a better state to respond to these factors and will do so based on their values.</p><blockquote id="02c28fee-e7b1-460b-a0c7-83aa8c34e197" class="">”Initiative – our basic nature is to act, and not be acted upon. Taking initiative does not mean being pushy, obnoxious, or aggressive. It does mean recognizing our responsibility to make things happen.”CLICK TO TWEET</blockquote><p id="d7da72f9-4658-4245-8cd8-c675bbaf6446" class="">Covey explains that proactivity doesn’t only occur on an individual level, businesses, organisations, communities, and families can all be proactive. It’s about gathering a number of proactive individuals together and cultivating their strengths to drive a proactive organisation or culture.</p><h3 id="52b7c4ba-4c66-465b-a88f-18e830508f17" class=""><strong>Be self-aware of your proactivity</strong></h3><p id="db556370-2c04-4518-96c5-9f48ab56a5b2" class="">Covey encourages everyone to examine their own level of proactivity by examining where they spend the most time and energy. He explains that everyone has a ‘circle of concerns,’ something that is outside of their control and is usually related to things like problems at work, debt, health, children etc. Instead of focusing all of your time on energy on things that are outside of your control, a proactive person will focus on things that they can change. This is what Covey calls the ‘circle of influence’.</p><h2 id="972306b1-b8ba-4aa3-b7b2-664a121fe716" class=""><strong>HABIT 2: BEGIN WITH THE END OF MIND</strong></h2><p id="dd2c9780-9126-4ef3-ab4f-a3dcb42f41ed" class="">Covey’s second habit is all about understanding the destination of any task or journey before you begin. Having an understanding of where you are headed is always going to benefit you while on the journey, it will ensure that you make the right decisions and take the right steps. Covey explains that this is critical for productivity and effectiveness, if you’re just working away without knowing where you’re headed, you’re like to feel busy, but never really reaching the desired results.</p><blockquote id="696b874c-deb4-49f5-ad03-4d7eb2c1c6e8" class="">”Begin with the End in Mind” is based on the principle that all things are created twice. There’s a mental or first creation, and a physical or second creation to all things. Most business failures begin in the first creation. With problems such as undercapitalization, misunderstanding of the market, or lack of a business plan.”</blockquote><h3 id="43f36a0f-47d1-4490-a9c3-d8c9e756cd58" class=""><strong>Imagination, conscience &amp; self-awareness</strong></h3><p id="88a78491-65a6-459b-8db3-5a209488d0cb" class="">Covey explains that there are three human qualities that allow us to examine the first creation part. Those are our own imagination, conscience, and self-awareness. If we can effectively engage these qualities, Covey explains that it’s possible for us to take ownership and control of the first creation, he explains that you can essentially write your own script.</p><p id="ff231fda-6683-4a13-be9a-52a66b744c3b" class="">Covey explains that our imagination is the key to visualising the potential, without the ability to imagine what it could be like. Our conscience is responsible for understanding the natural laws and principles, and when combined with our own personal guidelines we are able to figure out what we can contribute. Imagination and conscience, when combined with self-awareness enable us the ability to determine our own paths.</p><p id="28356712-36fa-4a02-b7f8-c190bf61dfae" class="">Covey explains that a personal mission statement should focus on your character, who you want to be, and what you want to do, what contributions you can make. Your personal mission statement will also take into account your values and principles. When combined, your personal mission should reflect your proactivity and be able to help you steer in the right direction.</p><h3 id="024dfde2-8540-408a-a561-16ad19c5bfb1" class=""><strong>Leadership and management</strong></h3><p id="b7020b05-61d8-49ed-b022-50a23d3cf1fa" class="">Many people consider leadership and management to be one and the same. But Covey explains that they are actually different, and leadership comes before management. Which is why leadership is the first creation, management is the second. To put this into context, a leader should be focused on what they need to accomplish (the WHAT), this is what Covey considers to be a top-line focus. Whereas management, the bottom-line focus, would be considering what the best way to accomplish their goals would be (the HOW).</p><h2 id="c5f5b484-e6ff-4635-9108-66ad5b2672f8" class=""><strong>HABIT 3: FIRST THINGS FIRST</strong></h2><p id="87b1308d-a8ed-4b8d-9bb7-e5179635cf02" class="">Covey’s third habit is actually the result of the first two habits, the third habit is the physical creation, the second creation.</p><blockquote id="f26eccb4-5e56-4ed3-bd0f-18a5a4e546ea" class="">”An ability to manage well determines the quality and even the existence of the second creation. Management is the breaking down, the analysis, the sequencing, the specific application. The time-bound left-brain aspect of effective self-government.”</blockquote><p id="af973bdb-3cac-4d24-b2ea-5651ad11bbbe" class="">Covey explains that independent will is essential in effective self-management. Without independent will, you lack the ability to make a choice or decision, and actually follow through. Covey describes independent will as the ability to act, rather than be acted upon.</p><h3 id="a58d2638-2379-4cea-a4bf-a3f8fd1ca8c2" class=""><strong>Time management</strong></h3><p id="b22bdfed-2c51-4257-8188-6e55bc023bc7" class="">Covey explains that there are 4 ‘generations’ in time management.</p><ol type="1" id="77bb9861-0cf6-46fa-bc61-93d1baeb277f" class="numbered-list" start="1"><li>The 1st generation is the recognition of the tasks that require our time and energy. The 1st generation is expressed through checklists, notes and to-dos.</li></ol><ol type="1" id="344f0ce3-87c3-4a0f-b7b1-43633e6b519c" class="numbered-list" start="2"><li>The 2nd generation focuses on planning and scheduling future events, getting a handle on our plans and is expressed through calendars and diaries.</li></ol><ol type="1" id="f208be25-c7f7-4a94-8646-e7483f1821f8" class="numbered-list" start="3"><li>The 3rd generation focuses on prioritisation, understanding what needs to be done first and the value of different tasks. It also focuses on goal-setting, long, short and immediate goals are set which dictates how we will spend our time and energy. The 3rd generation is expressed in daily planning, the setting out of any given day and scheduling time with your goals in mind.</li></ol><h3 id="28c78d22-4c30-49f9-adbe-4cd2f1c9608f" class=""><strong>What about the 4th generation?</strong></h3><p id="bd6e1a7d-6a8d-49e6-9a3b-aac1f907a414" class="">Covey explains that people now often perceive the detailed schedules and management of time can actually be counter-productive. And this is what has prompted the 4th generation. The 4th generation focuses on managing ourselves instead of just our time. Covey explains that the 4th generation recognises that the circle of influence should be our focus and that things, like building new relationships and nurturing current ones, are the key to results. When considering efficiency, rather than looking at your calendar, or checklists, you need to look at yourself and understand how you spend your time. This is how the 4th generation makes decisions and lives their daily lives.</p><h3 id="0ebf4a9c-53f5-4f0e-8b49-c5e2ea39b506" class=""><strong>Delegation</strong></h3><p id="3146f0cc-36a1-44ff-bfdc-9e3ef720b515" class="">Covey emphasises the importance of delegation. He believes that too many people are afraid to delegate, they believe that explaining what needs to be done to another person is a waste of time, and means that they could probably just perform the task themselves. People also fear that a task may not be completed in exactly the way they desired. However, Covey is a strong believer of delegation. By delegating things to other people, you are being more effective. And by delegating to time, you are being more efficient.</p><h2 id="34b17ebe-7c81-4fc9-9eae-bd155a19c973" class=""><strong>HABIT 4: WIN-WIN</strong></h2><p id="6ec2a6bd-b12f-42d2-9203-09cafecc503e" class="">Covey explains that win-win is actually a philosophy and a result of human interaction, there are six interaction paradigms. The 6 paradigms are; win-lose, lose-win, lose-lose, win, win-win, and no teal. Win-win is the ultimate goal and the best of all of the paradigms. By focusing on win-win rather than just hoping for a win for yourself, you are seeking benefits for everyone, not just yourself. When looking for a solution to a problem, looking for the win-win solution is always your best option, that way, every part will be satisfied and happy with the outcome. Covey reminds us that life isn’t a competition, it’s about co-operation.</p><h3 id="b18327cd-3f12-4eb5-9c59-44faa3645939" class=""><strong>Interpersonal leadership</strong></h3><p id="696bbe9a-d876-4a6a-8e8a-1ef4fc5a101c" class="">Covey explains that interpersonal leadership requires the fundamental habit of thinking win-win. By focusing on mutual benefits, you need to be well practiced at considering others. Covey explains that you also need to be courageous and speak up, because a lot of the time you will find yourself dealing with someone who is more aligned with the win-loss habit. In these situations, you have to push your win-win attitude and it may not be easy.</p><blockquote id="9e901d63-16c0-4f51-8a13-4283926c4942" class="">”Win-win is not a personality technique. It’s a total paradigm of human interaction. It comes from a character of integrity, maturity, and the Abundance Mentality. Win-win grows out of high-trust relationships. It is embodied in agreements that effectively clarify and manage expectations as well as accomplishments.”</blockquote><h2 id="ab6361fd-9fc1-4a44-88f1-6b5d160af1e5" class=""><strong>HABIT 5: SEEK FIRST TO UNDERSTAND, THEN TO BE UNDERSTOOD</strong></h2><blockquote id="b0f62390-3856-425c-825d-ae09e41523a4" class="">”We have such a tendency to rush in, to fix things up with good advice. But we often fail to take the time to diagnose, to really, deeply understand the problem first. This principle is the key to effective interpersonal communication.”</blockquote><p id="d885e8da-fa09-4979-9913-1547a9e5ff72" class="">Covey truly believes that communication is the fundamental life skill that we all need to work on. It’s literally something that we spend all day, every day doing. Covey points out that at school, you’re so focused on learning how to read, write and even speak, that no-one ever sits down and teaches you how to listen. There are two critical parts in any communication, the speaker, and the listener. So why do we so often forget about the listening part?</p><p id="84ac1ea7-afd8-4ac9-92bf-b40dc7bd1710" class="">Covey explains that when you are interacting with someone, and you aim to influence them to your way of thinking or your idea, you cannot simply dive in and tell them what you think. The first step you need to take is to understand them as a person, understand their values and what drives their thinking. If you can learn to listen and be empathetic, you will be able to nurture open, trusting relationships with other people that may lead to wonderful outcomes.</p><h3 id="8e927710-fd41-4bdb-ab3a-25e24a42d6a7" class=""><strong>Shift in paradigm</strong></h3><p id="d6875d0a-08e0-47bb-bf5a-4908b7c76189" class="">Covey explains that it’s in our nature these days to seek to be understood before anything else. He believes that when most people are quietly listening to another person, they are not actually being empathetic and aiming to understand, they are simply biding their time, waiting for their opportunity to respond. Therefore, shifting to seek first to understand can be considered quite a radical change in our thinking.</p><blockquote id="ff21786f-16a6-4a36-a87a-6aaa1980451b" class="">”As you learn to listen deeply to other people, you will discover tremendous differences in perception. You will also begin to appreciate the impact that these differences can have as people try to work together in interdependent situations.”</blockquote><h2 id="c626aa9d-b565-4909-bbad-f6a35d5ef48a" class=""><strong>HABIT 6: SYNERGISE</strong></h2><blockquote id="b768c2b2-be4d-4fb5-b65a-13b5cff0dc52" class="">”When properly understood, synergy is the highest activity in all life. The true test and manifestation of all the other habits put together. Synergy is the essence of Principle-Centred Leadership. It is the essence of principle-centred parenting. Synergy catalyses, unifies, and unleashes the greatest powers within people.”</blockquote><p id="565dd2c3-8b51-4c30-a922-c4b7c973542a" class="">Covey explains that synergy occurs when all of the parts add up to a whole that is greater than the sum of each of those individual parts.</p><h3 id="9a349ef1-6c62-4ba4-b690-c4d71e37fb39" class=""><strong>Communicating synergy</strong></h3><p id="30ddf76e-6d85-4f9a-b709-4ad052bdced8" class="">Covey acknowledges that by communicating synergistically, it may seem like you’ve cast aside everything you learned about habit 2. By communicating synergistically, you allow yourself to be open to new opportunities and options, and now you might not be sure what the result of your communication will be, the end is not the first thing on your mind. However, Covey believes that communicating synergistically is actually fulfilling the goal of having the end in mind. The end you are imagining is better than it was before, a sense of excitement and adventure. And that adventure, and bitterness, is the end you can keep in mind.</p><p id="0049efb6-7120-4cea-b471-6dae4a70d6f9" class="">Covey explains that both synergy and creativity are exciting phenomena. And once people start to experience synergy and have interactions that are mind-expanding, it’s easy to get hooked. It’s a habit worth pursuing, the outcomes can be life-changing and bring around significant improvement, so Covey really encourages everyone to communicate synergistically whenever possible.</p><blockquote id="8a609bd2-c36e-4802-bc46-7168cfec1eb4" class="">”Synergy works; it’s a correct principle. It is the crowning achievement of all the previous habits. Synergy is effectiveness in an interdependent reality. It is teamwork, team building, the development of unity and creativity with other human beings.”</blockquote><h2 id="13e3ed6b-b1f1-4839-87f0-70dd74777aa8" class=""><strong>HABIT 7: SHARPEN THE SAW</strong></h2><p id="02441241-e084-415c-b8e8-b91a93d9fdf3" class="">For Covey, ‘sharpening the saw’ means looking after, investing in, and improving yourself, because after all, you are your own greatest asset. He explains that there are 4 dimensions to any person: physical, spiritual, mental, and social/emotional. It’s important to check in with each of these dimensions regularly and ensure they are being preserved and enhanced.</p><blockquote id="4d8e8ad4-8f4a-49a3-b556-59bc2630c2a7" class="">”This is the single most powerful investment we can ever make in life. Investment in ourselves, in the only instrument we have with which to deal with life and to contribute.”CLICK TO TWEET</blockquote><h3 id="deaec1ff-28c2-4377-8e49-1c94cedd7845" class=""><strong>Four dimensions</strong></h3><ol type="1" id="f3e8a390-28d2-4bfa-aa81-a29584d9978d" class="numbered-list" start="1"><li>The Physical Dimension: this dimension means looking after your body inside and out, ensuring that you eat well, exercise regularly and get enough rest.</li></ol><ol type="1" id="ef82c23e-34be-4859-91f2-98b401550cc1" class="numbered-list" start="2"><li>The Spiritual Dimension: this is a very private dimension and a fundamental part of making you, you. Being spiritual can come in many different forms whether it be meditation, yoga or enjoying nature. It’s about connecting with your core and your values.</li></ol><ol type="1" id="2de4e5d1-1513-47ec-b1ff-70813f541166" class="numbered-list" start="3"><li>The Mental Dimension: Covey explains that formal education and schooling aids the majority of our mental development in our early years. However, once we leave the confinements of formal education, too many people stop pursuing learning and development. It is important to continue to educate yourself in as many ways as possible. it doesn’t have to be as discipline or regimented as schooling, but it’s important to be proactive and keep training your brain.</li></ol><ol type="1" id="89ee8c11-36d7-4bc1-9179-c9aebbdc293f" class="numbered-list" start="4"><li>The Social/Emotional Dimension: this dimension has a lot to do with our relationships and communications. Ensuring that your social/emotional dimension is looked after is often easier than the rest, it occurs regularly with daily interactions. It’s important, however, to really nurture important relationships.</li></ol><p id="9534aff0-4324-45fc-ac14-8b673830cbbf" class="">Covey stresses the importance of renewing all four dimensions of our life in harmony and balance. If you fail to nurture one area, the negative outcomes will impact the other dimensions.</p><blockquote id="88830d00-bfe0-4215-a9eb-b1b1bef707aa" class="">”Most people are a function of the social mirror, scripted by the opinions, the perceptions, the paradigms of the people around them. As interdependent people, you realise that we are a part of that social mirror. Choose to reflect back to others a clear, undistorted vision of themselves.”</blockquote><h2 id="9ca5361c-6558-4ef9-9665-aab38c4a313b" class=""><strong>CONCLUSION</strong></h2><h3 id="a7742936-9730-4d68-a5ce-d7f3a7f9e6b2" class=""><strong>KEY TAKEAWAYS</strong></h3><ul id="a90a36c8-3105-443c-ba2b-fa06af236d92" class="bulleted-list"><li style="list-style-type:disc">A paradigm is the way that you “see” the world. The way you perceive the world, understand it’s workings and interpret events.</li></ul><ul id="e2807e94-d99e-4fe7-bbc8-b6b0ac8dd13b" class="bulleted-list"><li style="list-style-type:disc">A habit is the intersection of knowledge, skill, and desire.</li></ul><ul id="a61fdd6c-b82c-4113-b42e-80d7e8edd2bf" class="bulleted-list"><li style="list-style-type:disc">To be proactive means to take on a responsibility and making things happen, not waiting for things to happen to you.</li></ul><ul id="cebb489a-ff16-479b-9668-4bc5cfd278de" class="bulleted-list"><li style="list-style-type:disc">Proactivity doesn’t only occur on an individual level, businesses, organisations, communities, and families can all be proactive.</li></ul><ul id="32bae885-289d-47c5-969d-9bb88f5ed16a" class="bulleted-list"><li style="list-style-type:disc">Having an understanding of where you are headed is always going to benefit you while on the journey. It will ensure that you make the right decisions and take the right steps.</li></ul><ul id="3d056db3-0797-4ec2-a927-bdd38a1d4c8a" class="bulleted-list"><li style="list-style-type:disc">Win-win is the ultimate goal and the best of all of the interaction paradigms.</li></ul><ul id="79e8e56b-2610-4d53-a9cc-94d71d139066" class="bulleted-list"><li style="list-style-type:disc">By focusing on win-win rather than just hoping for a win for yourself, you are seeking benefits for everyone, not just yourself.</li></ul><ul id="51767100-d7de-44a4-afb4-20042de81688" class="bulleted-list"><li style="list-style-type:disc">Seek first to understand.</li></ul><ul id="a49aa41c-c0b7-4bf0-940b-ac69a0a04e2d" class="bulleted-list"><li style="list-style-type:disc">The first step you need to take is to understand them as a person, understand their values and what drives their thinking.</li></ul><ul id="47f3af3e-1254-4a27-b1b0-68518004bafc" class="bulleted-list"><li style="list-style-type:disc">There are 4 dimensions to any person: physical, spiritual, mental, and social/emotional.</li></ul><ul id="4c325bbd-ecfc-4f02-918b-5fce0e27531b" class="bulleted-list"><li style="list-style-type:disc">It’s important to check in with each of these dimensions regularly and ensure they are being preserved and enhanced.</li></ul><h3 id="5111fff0-c264-4966-b892-b5e9e46e9553" class=""><strong>ACTION STEPS</strong></h3><ul id="f1839d6f-a642-4caa-b071-e21b3fb9e805" class="bulleted-list"><li style="list-style-type:disc">Aim to be more proactive, make things happen. Most importantly, don’t wait for things to happen to you so you can simply react.</li></ul><ul id="4c75d694-2ab7-4074-a013-6617a8c97915" class="bulleted-list"><li style="list-style-type:disc">When looking for a solution to a problem, approach it with the win-win mindset. What outcome is going to be mutually beneficial for all parties. Stop focusing on just yourself.</li></ul><ul id="8cd5f251-20ca-4453-803c-9e60200beabc" class="bulleted-list"><li style="list-style-type:disc">When having a discussion with someone else, aim to understand them as a person. Consider what motivates them and how they think. Don’t simply wait for your turn to talk.</li></ul><ul id="71efbb0e-4081-406b-b5cc-c100b6824da3" class="bulleted-list"><li style="list-style-type:disc">Check in with your own 4 dimensions regularly. Ensure that none are neglected and you are always nurturing and developing.</li></ul></div></article></body></html>

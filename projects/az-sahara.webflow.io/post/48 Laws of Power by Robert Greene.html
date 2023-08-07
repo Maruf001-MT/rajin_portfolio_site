@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>48 Laws of Power by Robert Greene</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body style="background-color: #242424; color: white;"><article id="9b69216f-3d0e-4258-8ac5-ba9c5e545d66" class="page sans"><header><h1 class="page-title">48 Laws of Power <strong><strong>by </strong></strong><em><strong><strong>Robert Greene</strong></strong></em></h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><td><span class="selected-value select-value-color-green">Pre-processed</span></td></tr></tbody></table></header><div class="page-body"><h2 id="e324280f-4a2a-4c70-a5bc-3042a1269f66" class=""><strong>LAW 1: NEVER OUTSHINE THE MASTER</strong></h2><p id="a433e65c-73b1-47e0-9e00-3410f04105ae" class="">Greene’s first law emphasises the importance of ensuring that anyone above you in the hierarchy, whether it be in business, work or an organisation, should always be made to feel like they are the superior. It’s important to remember that you are below them, and remind them of that. It’s easy to want to show off your talents and skills, but don’t go too far and make your superior feel insecure or inadequate. Green believes that by making your superior feel like they are even better than they are and better than you, will help you on your road to power. If you make them doubt their role and power, this will only discredit you and set you back.</p><h2 id="7c1ad18c-a551-4268-a758-7ff6789c32e2" class=""><strong>LAW 2: NEVER PUT TOO MUCH TRUST IN FRIENDS, LEARN HOW TO USE ENEMIES</strong></h2><p id="fcf922c8-c419-4072-a47e-5e0edbef1435" class="">Greene warns of putting too much trust in your friends, especially your close friends. He explains that your friends are easily subjected to envy, and are much more likely to betray you when presented with an opportunity. Greene believes that your former enemies can come in as more useful than your friends. This is because someone who was an enemy has a lot more to prove. You’ll often find they work harder to earn your trust and respect, and for this reason, they make better colleagues and employees. Greene believes that you should fear your friends more than your enemies. And if you don’t think you have any enemies, you should go out and look for them.</p><h2 id="60b866f7-f2d9-49e0-bba1-4b893844d768" class=""><strong>LAW 3: CONCEAL YOUR INTENTIONS</strong></h2><p id="144a247b-8b6f-4ad9-bbed-31ce5dd52f52" class="">The third law stresses that you should never let people know your intentions. Obviously, your actions are prompted by your intentions, but never let them be known. Keeping people in the dark will mean that they are unable to prepare themselves and will be unprepared when it’s time for them to react or respond. Greene goes as far as to recommend giving them false information, suggest that you are heading off in a different direction so that they get caught up in that. And by the time your intentions are revealed, it will be too late for them to do anything about it.</p><blockquote id="4c70aaac-ac6a-42c8-ae17-5d6a4cbb1f5a" class="">”Part I: Use decoyed objects of desire and red herrings to throw people off the scent. Part II: Use smoke screens to disguise your actions”</blockquote><h2 id="b96e8371-6cd7-4c89-ada1-52343d9569c6" class=""><strong>LAW 4: ALWAYS SAY LESS THAN NECESSARY</strong></h2><p id="9a34ed2f-9d89-462f-bd6b-c770f170f7a2" class="">This goes hand in hand with the previous law, never ever say more than necessary, try and say as little as possible. Greene believes that by saying too much, you open yourself up for criticism and interrogation, you’re also likely to say something you regret. Greene explains that powerful people say less, they often keep things vague and open-ended. This can be both intimidating and impressive.</p><h2 id="1aee4594-31d3-4cec-8162-47153b87a871" class=""><strong>LAW 5: SO MUCH DEPENDS ON REPUTATION—GUARD IT WITH YOUR LIFE</strong></h2><p id="ca292394-e38a-4909-a0f2-89dc9724a79d" class="">We all know that reputation has the ability to make or break a man. Greene emphasises that reputation is absolutely fundamental to your power. If your reputation is strong, you will have influential power and the ability to intimidate. However, if your reputation is compromised, you become vulnerable and open yourself up to attack. Greene stresses the importance of making sure your reputation is resilient and untouchable. If you see a potential problem arising, address it before it can affect you. And in order to maintain the best reputation, Greene encourages you to learn your enemies weaknesses and do damage to their own reputations.</p><h2 id="1954f882-9d62-4c1b-8f01-2bd65d472e84" class=""><strong>LAW 6: COURT ATTENTION AT ALL COST</strong></h2><p id="30ef8841-acf8-4d21-8956-3e9cf294e7ed" class="">As important as your reputation is, it’s important to consider your appearance, how other people perceive and judge you. Greene explains that you do not simply want to blend in or get lost amongst everyone else. It’s in your best interest to stand out, be known and gain all the attention you can. If this means you have to act big and colourful then do it, or add an element of mystery to entice more wanted attention.</p><blockquote id="59818cd3-a6f7-4836-abc0-e62019694935" class="">”Part I: Surround your name with the sensational and scandalous. Draw attention to yourself. Part II: Create an air of mystery. Do not show all of your cards. ”</blockquote><h2 id="42483f22-5d08-442c-b04d-b26c239efad3" class=""><strong>LAW 7: GET OTHERS TO DO THE WORK FOR YOU, BUT ALWAYS TAKE THE CREDIT</strong></h2><p id="b23752a4-a8d6-4c03-88a4-a7a8636549dc" class="">The seventh law is all about delegation. Other people have plenty to offer in terms of knowledge, wisdom, talent, and skills. Greene encourages you to take full advantage of other people and what they can offer. He explains that you shouldn’t be doing tasks that someone else could do. By delegating work you’ll save time and become more efficient. But don’t forget, it’s important that YOU take the credit, let it be known that you are behind all of the hard work.</p><h2 id="986ec109-6d8e-4370-9e07-cd5438a3c6b3" class=""><strong>LAW 8: MAKE OTHER PEOPLE COME TO YOU—USE BAIT IF NECESSARY</strong></h2><p id="2507e2bb-d3f8-42f3-9ee4-8ae48f1db7c3" class="">Greene explains that you need to take control and make other people act. You need to act as the puppet master. Don’t let this break-down and have to reach out to others, encourage them to come with you. Greene suggests using lures and baits if necessary, then once they’ve show interest, you can use your influence and power to take control of the situation. He believes that you always need to be the one holding the cards.</p><h2 id="a9feb1fa-e43e-494b-a389-1a58ce7a868a" class=""><strong>LAW 9: WIN THROUGH YOUR ACTIONS, NEVER THROUGH ARGUMENT</strong></h2><blockquote id="4da91648-686a-4b95-8fcc-4539298e4ba6" class="">”Any momentary triumph you think you have gained through argument is really a Pyrrhic victory: The resentment and ill will you stir up is stronger and lasts longer than any momentary change of opinion.”</blockquote><p id="87ea650e-f6a6-46cd-8f9e-603fad2a9076" class="">Greene believes that you should be using your actions, not your words to convince others and get them on your side. Arguments are not a valid way to use your power, do not stoop to their level. You should be able to portray your influence and power through actions and demonstrations alone.</p><h2 id="fecdb04f-e0ae-4e9c-a8e6-028c9410254e" class=""><strong>LAW 10: INFECTION: AVOID THE UNHAPPY AND UNLUCKY</strong></h2><p id="caceeb40-29be-47b4-85bd-892548744f37" class="">Greene emphasises the importance of surrounding yourself with others who are also happy and fortunate. By doing this, you’ll cultivate your own happiness and success. If you find yourself surrounded by miserable people or people who are prone to disaster and affected by emotions, you’ll likely take on their own misery. It’s too easy to be drawn into other peoples problems so it’s best to avoid them altogether.</p><h2 id="3250a5c5-1c73-4566-b1c4-60ceb93f1702" class=""><strong>LAW 11: LEARN TO KEEP PEOPLE DEPENDENT ON YOU</strong></h2><p id="fb6ac6df-ebd2-4cd6-8d35-6e18f3daf723" class="">The eleventh law is about establishing relationships with other people who depend on you. Greene explains that always being needed and wanted is the way to actually maintain your power and independence. If other people are too independent and don’t need your input, then they will gain too much power. With colleagues and employees, ensure that you never teach them everything or give them the authority to do everything. They have to need you for something.</p><h2 id="324f8769-465d-4827-803a-e507cf7c253d" class=""><strong>LAW 12: USE SELECTIVE HONESTY AND GENEROSITY TO DISARM YOUR VICTIM</strong></h2><blockquote id="85da9c21-179c-4096-89cd-f5e1adcd27d8" class="">”One sincere and honest move will cover over dozens of dishonest ones. Open-hearted gestures of honesty and generosity bring down the guard of even the most suspicious people.”</blockquote><p id="3a428850-55b0-4286-bb73-96eaeee2a478" class="">Greene’s point here is that you can be dishonest countless times, but being honest and open just once will cover any tracks, and give credibility to all the times you were actually dishonest. If you can be selective and time your honesty well, people will believe you are truly trustworthy, opening themselves up to the opportunity for you to manipulate them.</p><p id="f0b64b85-83ab-45c8-8b47-9897e8ad0e9b" class=""><a href="https://twitter.com/share?text=%E2%80%9DOne+sincere+and+honest+move+will+cover+over+dozens+of+dishonest+ones.+Open-hearted+gestures+of+honesty+and+generosity+bring+down+the+guard+of+even+the+most+suspicious+people.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/48-laws-power-book-summary-pdf/"><strong><strong>”One sincere and honest move will cover over dozens of dishonest ones. Open-hearted gestures of honesty and generosity bring down the guard of even the most suspicious people.”</strong></strong></a><a href="https://twitter.com/share?text=%E2%80%9DOne+sincere+and+honest+move+will+cover+over+dozens+of+dishonest+ones.+Open-hearted+gestures+of+honesty+and+generosity+bring+down+the+guard+of+even+the+most+suspicious+people.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/48-laws-power-book-summary-pdf/"><strong>CLICK TO TWEET</strong></a></p><h2 id="78d987bd-efaf-4528-babf-cf4008c97556" class=""><strong>LAW 13: WHEN ASKING FOR HELP, APPEAL TO PEOPLE’S SELF-INTEREST, NEVER TO THEIR MERCY OR GRATITUDE</strong></h2><p id="d9f38801-fddd-40be-a50f-96b31b9dbea3" class="">It’s inevitable that at some point, you’ll need to ask for help. And when you do, Greene encourages you not to give in the temptation to use your own assistance or good deeds in the past as a way to ask for help. Instead, offer a situation in which the other person will also realise a benefit. If someone can see that there is something in it for them, they are much more likely to agree. Even if there’s no obvious benefit for them, try and spin your request in a way that they can see some gains.</p><h2 id="1b74b683-6ae9-420f-9ce3-f0e847c58da3" class=""><strong>LAW 14: POSE AS A FRIEND, WORK AS A SPY</strong></h2><p id="8a4285e0-a95e-4db0-8f05-e07cb2abddc2" class="">Greene emphasises the importance of understanding your rivals, you need to know their strengths, weaknesses and what makes them tick. The best way to do this is to essentially pose as a spy, meanwhile, you are being a spy. Learn how to get information out of people, probe them on the right topics and learn how to ask the right questions. You don’t want to be too direct, you don’t want them to figure out what you’re doing. So aim to be subtle and indirect. Greene believes that any social encounter should be used as an opportunity for spying.</p><h2 id="0474e8d2-04a5-4bbb-b8f1-56724f2be4b5" class=""><strong>LAW 15: CRUSH YOUR ENEMY TOTALLY</strong></h2><p id="3f833a47-ee73-45ad-8060-6a33609e93e3" class="">This law is pretty straightforward, Greene encourages you to ensure that your enemy is completely annihilated. You need to ensure that they are totally crushed, otherwise, they’ll quickly bounce pack and seek revenge. You need to avoid the risk of rebuttal. Once you’ve begun your path to annihilation, don’t stop, don’t give them the chance to fight back.</p><h2 id="63b0e9eb-af28-4c53-ac64-96761dcf1d25" class=""><strong>LAW 16: USE ABSENCE TO INCREASE RESPECT AND HONOUR</strong></h2><p id="87e13988-88e8-4557-9064-796ab515da44" class="">There’s a lot to be said for creating an element of mystery, as Greene has mentioned in previous laws, and the same goes for your presence. You want to avoid being seen and heard to often, it only makes you seem common and more approachable. Withdraw socially and you’ll notice that people are curious, they’ll talk and wonder what you are up to.</p><h2 id="376c8106-a64b-423d-b942-3d13dab46409" class=""><strong>LAW 17: KEEP OTHERS IN SUSPENDED TERROR: CULTIVATE AN AIR OF UNPREDICTABILITY</strong></h2><blockquote id="0d470607-b370-4ba5-9332-b27336789c81" class="">”Humans are creatures of habit with an insatiable need to see familiarity in other people’s actions. Your predictability gives them a sense of control. Turn the tables: Be deliberately unpredictable.”</blockquote><p id="58aa4177-8ebb-460e-8f81-ea9401dc329a" class="">Green explains that as humans we expect the expected. And the reason we do is that we like to be able to predict whats going to happen. If you can act in a way that seems inconsistent and leaves people unsure of your intentions, they will be left in wonder. Not knowing what your purpose and plans are will leave people feeling unsettled and likely intimidated by you.</p><p id="b899d7e3-2907-4534-b5d1-be0f5ccfee0d" class=""><a href="https://twitter.com/share?text=%E2%80%9DHumans+are+creatures+of+habit+with+an+insatiable+need+to+see+familiarity+in+other+people%E2%80%99s+actions.+Your+predictability+gives+them+a+sense+of+control.+Turn+the+tables%3A+Be+deliberately+unpredictable.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/48-laws-power-book-summary-pdf/"><strong><strong>”Humans are creatures of habit with an insatiable need to see familiarity in other people’s actions. Your predictability gives them a sense of control. Turn the tables: Be deliberately unpredictable.”</strong></strong></a><a href="https://twitter.com/share?text=%E2%80%9DHumans+are+creatures+of+habit+with+an+insatiable+need+to+see+familiarity+in+other+people%E2%80%99s+actions.+Your+predictability+gives+them+a+sense+of+control.+Turn+the+tables%3A+Be+deliberately+unpredictable.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/48-laws-power-book-summary-pdf/"><strong>CLICK TO TWEET</strong></a></p><h2 id="374eca04-cedd-4d6a-b1b6-236938100290" class=""><strong>LAW 18: DO NOT BUILD FORTRESSES TO PROTECT YOURSELF—ISOLATION IS DANGEROUS</strong></h2><p id="4a43aef2-6b6d-486d-a4fe-f2160810a49b" class="">Greene explains that it’s tempting to want to build a ‘fortress’ around yourself, create your own safe zone. But in doing so, you isolate yourself, and Greene explains that isolation is actually dangerous. It means that the information you may require is limited and not as easy to access. It also draws attention to you, often promotion others to attack, you seem like an easy target, all alone and ‘protected’. Greene explains that a better strategy is to surrounds yourself with allies and people, this way the crown can work as your shield. There’s plenty of people between you and your enemy.</p><h2 id="1b47f7ee-f712-409c-a58b-51d81c3c1313" class=""><strong>LAW 19: KNOW WHO YOU’RE DEALING WITH—DO NOT OFFEND THE WRONG PERSON</strong></h2><p id="4df0b5a4-eb36-4ebe-b526-a7e40e96ab91" class="">As we’ve mentioned before, it’s so important to understand the people you associate with, allies or enemies. This knowledge will give you power. As Greene points out, everyone is different and you cannot use the same strategies on everyone, there is no one-size-fits-all approach. Greene warns against certain types of people, those who, if deceived, will seek revenge and continue to do so until they are satisfied. These are not the people you should seek to offend or deceive. Ensure that you know exactly who you are dealing with before you take action.</p><h2 id="7615b95b-633e-493f-853a-d7624fca9f37" class=""><strong>LAW 20: DO NOT COMMIT TO ANYONE</strong></h2><p id="a08c0031-e508-44e9-9ea4-01c268184e26" class="">Greene explains that your own independence should be considered a strength, not a weakness. Do not fall into the common trap of committing to someone or to a certain side. Always remain strong to yourself and your own goals. Being independent will put you in a position of power, people will come after you, wanting to enlist you, and they will likely argue over you. This establishes you as the one with all the power.</p><blockquote id="ab2cd6d0-54b2-4cc1-8c04-32ca5de01baa" class="">”Part I: Do not commit to anyone, but be courted by all. Part II: Do not commit to anyone – stay above the fray.”</blockquote><h2 id="81a011c4-3a44-49ed-a16a-8aa79972fff7" class=""><strong>LAW 21: PLAY A SUCKER TO CATCH A SUCKER—SEEM DUMBER THAN YOUR MARK</strong></h2><p id="626ed39f-c045-4dac-be07-ffd972af7579" class="">It goes without saying that we all want to feel intelligent, there’s nothing worse than feeling like you’ve done or said something stupid. Greene encourages you to use this need to be smart to your advantages. Consider your enemies and victims, and make sure they feel like they are smart, smarter than you even. And if you can establish this false sense of confidence within themselves, they will never suspect you.</p><h2 id="7aba4328-3143-485d-a942-ce5509d5cd64" class=""><strong>LAW 22: USE THE SURRENDER TACTIC: TRANSFORM WEAKNESS INTO POWER</strong></h2><p id="e96b20ef-10ba-420f-84a0-fb9660740018" class="">If you are the weaker side, the temptation is there to continue fighting, even if it’s just to heal your ego. However, Greene recommends surrendering in these situations. By surrendering, you warrant yourself the time to recover. And in this time, hopefully, your opponent’s power will cease, they will be irritated at the time passing. Rather than letting them overcome and defeat you, be the bigger person and step aside first. It’s a move that many don’t expect and will play in your favour.</p><h2 id="5f7749f3-155e-4a9f-8017-74597bc4b83a" class=""><strong>LAW 23: CONCENTRATE YOUR FORCES</strong></h2><blockquote id="50aca4b6-6e7a-4e85-b416-006bc3929c7b" class="">”Conserve your forces and energies by keeping them concentrated at their strongest point.”</blockquote><p id="061a739c-bd34-48a0-9fee-9a795cc52ecd" class="">Greene explains this point with a mining metaphor. If you find a mine full of riches and continue to mine deeper and pursue it further, you will find more and more wealth. However, if you choose to pursue numerous different mines, all with less wealth, you’ll be less successful. Greene explains that intensity defeats extensity and this is what you need to keep in mind always. When you find a source of power, pursue it and don’t let it go. Don’t go looking for another source when a perfectly good one has already presented itself.</p><h2 id="66b92cc1-5742-41d4-8ae6-7b006419f046" class=""><strong>LAW 24: PLAY THE PERFECT COURTIER</strong></h2><blockquote id="beb673cd-61b1-47a6-8808-7500cefaa0a2" class="">”The perfect courtier thrives in a world where everything revolves around power and political dexterity. He has mastered the art of indirection; he flatters, yields to superiors, and asserts power over others in the most oblique and graceful manner. Learn and apply the laws of courtiership and there will be no limit to how far you can rise in the court.”</blockquote><h2 id="bb6e10e1-78d9-4c14-83bc-68a24397d284" class=""><strong>LAW 25: RE-CREATE YOURSELF</strong></h2><p id="f07c80a6-b4c6-4ab3-b82d-8451284acaa8" class="">Society will try to enforce certain expectations on you. But Greene emphasises that you do not need to adhere to these. You have the ability to re-create yourself. You can be whoever you want to be, and you are in control. Don’t let anyone tell you who you should be or how you should act. Greene encourages you to be someone who demands attention, someone who is dramatic and has a strong and powerful character.</p><h2 id="67afa6a3-53b4-4df0-ac52-82191a473073" class=""><strong>LAW 26: KEEP YOUR HANDS CLEAN</strong></h2><p id="9e538e3d-f5c8-4aed-853b-cb889e9bcd34" class="">You must keep up appearances of a well respected and well-behaved citizen. Never let it be realised that you have dirtied your hands with corruption or manipulation. Your appearance is critical to your power, and you must withhold your reputation. Greene recommends letting other people take the blame for any actions that are not going to be well received. Never get your hands dirty publicly.</p><blockquote id="4b4e00da-59f9-4bd9-a774-f481f5bc2e93" class="">”Part I: Conceal your mistakes – have a scapegoat around to take the blame. Part II: Make use of the ‘Cat’s Paw’ – someone who does the dirty work for you.”</blockquote><h2 id="2550a769-dc90-4fa9-8ff6-2fc768d68d70" class=""><strong>LAW 27: PLAY ON PEOPLE’S NEED TO BELIEVE TO CREATE A CULT-LIKE FOLLOWING</strong></h2><p id="baaca105-124a-4783-b1f0-88e828027dfd" class="">Everyone wants to feel like they belong to something, and everyone wants to believe is something that is bigger than themselves. Greene explains that people are always looking for something or someone to follow, so take advantage of that need and desire. To gain a following, promise plenty of hope, be enthusiastic and offer new regimes for people to follow. Greene explains that a key to leading people is asking them to make a sacrifice for you. This is how you build a following and a belief system, leading to more and more power for you.</p><h2 id="f9373972-00b8-4158-a82b-a2801096ae03" class=""><strong>LAW 28: ENTER ACTION WITH BOLDNESS</strong></h2><p id="815ca1c3-27bd-44c3-a1b9-4b55b5118e13" class="">Greene emphasises the importance of always acting with intent and confidence. You should never begin anything if you are unsure. Any doubts you have will only hinder your results. Greene believes that boldness will gain you a lot more power and admiration that being reluctant ever would.</p><blockquote id="3a63c78e-da03-4e30-8f9a-33cf974463d0" class="">”Any mistakes you commit through audacity are easily corrected with more audacity.”</blockquote><h2 id="acee356b-e507-4d91-9317-a7e6c166c901" class=""><strong>LAW 29: PLAN ALL THE WAY TO THE END</strong></h2><p id="5cf54e9e-a5b8-4446-a7bd-87f5c4fa3cb4" class="">Greene recommends planning any action out from beginning to end. It’s important that you consider the end goal early on so you have the opportunity to recognise any potential problems that may arise. By planning you will eliminate the aspect of surprise and will be better prepared for the task at hand. Never enter anything unprepared, always know the end goal and be thinking a few steps ahead.</p><h2 id="d264225e-762c-46f0-94d1-fac022b20a79" class=""><strong>LAW 30: MAKE YOUR ACCOMPLISHMENTS SEEM EFFORTLESS</strong></h2><p id="67faccf8-815a-47b1-be7a-38ba8131c49d" class="">Regardless of how much time, energy and effort you have put into something, you want your results to seem like they were natural and completed easily. Appearing like you can achieve so much with so little effort will emphasis your power. And when asked, don’t explain how you get there or how you work, remain vague and let other people be impressed by your results. Don’t give away your secrets.</p><h2 id="c40c63d1-1127-4a99-8950-ae67a3b42c02" class=""><strong>LAW 31: CONTROL THE OPTIONS: GET OTHERS TO PLAY WITH THE CARDS YOU DEAL</strong></h2><p id="058370ce-cf7e-41ed-942d-3a440e39b9c3" class="">When deceiving someone, you want them to feel like they have a choice, let them feel like they are in control when really you are making the rules. If you can provide an option with two outcomes, both that benefit you, your victim will feel like they made the decision and this will cloud over your deception. As long as you are benefited with both options, then this will work in your favour. Consider the idea of presenting them with two evils, giving them the chance to pick the lesser of two evils.</p><h2 id="1f861aa6-7ebf-464c-b2ca-dadbb421256c" class=""><strong>LAW 32: PLAY TO PEOPLE’S FANTASIES</strong></h2><p id="33103521-6858-4fff-9f12-6e2ea9e219a6" class="">Greene explains that the truth can often be nasty, negative and generally not very appealing. And this is why avoiding the truth is the better option in many cases. Telling people the truth can often lead to anger and distress so it’s better to present a false-truth, something that is more appealing. This is where Greene recommends you play up to other people’s fantasies. Consider what they really want to hear and present them with that.</p><h2 id="cb2e932d-6d0e-4949-95a6-11bd17e01f75" class=""><strong>LAW 33: DISCOVER EACH MAN’S THUMBSCREW</strong></h2><p id="59ff846c-d4e2-41f0-b882-7b282afa60a8" class="">Greene explains that everyone has a weakness, it’s absolutely impossible to be flawless. The key to destroying an enemy is figuring out what their weakness is. Usually fuelled by insecurities and unstable emotions, weaknesses can be found anywhere. Once you’ve established someone’s weakness, turn it around and use it to your own advantage.</p><h2 id="93aa8607-19d1-4a0c-b8d2-2bbbd6e6600b" class=""><strong>LAW 34: BE ROYAL IN YOUR OWN FASHION: ACT LIKE A KING TO BE TREATED LIKE ONE</strong></h2><p id="3461a49c-ff35-40d9-8b47-e04642a9f613" class="">Everyone’s heard the saying treat others how you want to be treated before. Well, Greene takes this one step further, he explains that you need to act exactly how you want to be treated. If you act regally, powerful, and confident, then others will respect you and treat you almost as if you were royal. By acting nervous, commonly, and quiet, then people will not have much respect for you. Demand respect and portray this through your actions.</p><h2 id="fe8a7fa4-41ad-4372-989c-98d7f777068b" class=""><strong>LAW 35: MASTER THE ART OF TIMING</strong></h2><p id="2fdcebe7-dc98-4d29-ba0f-8234394a3ac2" class="">Timing is everything. Greene recommends that you always present yourself as patient and never in a rush. Being in a rush just suggests that you lack control and can’t manage yourself or your time.</p><blockquote id="6b1ff3d6-dd38-4c13-94ae-e2f55c9d14d6" class="">”Become a detective of the right moment; sniff out the spirit of the times, the trends that will carry you to power. Learn to stand back when the time is not yet ripe, and to strike fiercely when it has reached fruition.”</blockquote><h2 id="a97ddfba-524a-49ef-8d79-622342fe2448" class=""><strong>LAW 36: DISDAIN THINGS YOU CANNOT HAVE: IGNORING THEM IS THE BEST REVENGE</strong></h2><p id="6e020d92-23b5-49ca-8dfe-7e0abaa4bc57" class="">Greene emphasises the importance of simply ignoring any problems that arise. By ignoring them, you starve them of attention and eventually, they will disappear. Alternatively, if you acknowledge problems, the attention they receive will give them more credibility and things are likely to spiral. Consider this when dealing with your enemies, rather than giving them attention and essentially strengthening their power, you should ignore them and starve them of attention. Do the same for things that you want but cannot have, never let people know you want for something you do not have. Show no interest and you will seem like the bigger, more powerful person.</p><h2 id="811a6bab-547b-4363-9d39-a8a2530d2cbc" class=""><strong>LAW 37: CREATE COMPELLING SPECTACLES</strong></h2><p id="44051d4d-9250-4a96-8054-8e0e2a909c92" class="">As Greene has made it pretty clear in previous laws, your appearance is everything. Greene encourages you to lift your appearance and the aura around you with compelling imagery, grand statements, and big gestures. Use impressive visuals to draw people in, they will be impressed and stunned by you ‘power’. These ‘spectacles’ can also offer as a distraction from your real intentions.</p><h2 id="dbc996f4-7471-4ded-8626-2fab9c2bbb36" class=""><strong>LAW 38: THINK AS YOU LIKE BUT BEHAVE LIKE OTHERS</strong></h2><blockquote id="4e9fbc11-9365-4502-95e9-b9baa7579e47" class="">”If you make a show of going against the times, flaunting your unconventional ideas and unorthodox ways, people will think that you only want attention and that you look down upon them.”</blockquote><p id="0b06d08f-b8a9-4a82-a837-128c6539170e" class="">Greene explains that it’s much better to blend into the crowd, when around others, take on their thinking and ideas. Don’t express your true self unless you are with specifically chosen friends and colleagues who you are sure would understand your approach.</p><h2 id="de8e2545-35fd-4475-92b7-7a89a0662329" class=""><strong>LAW 39: STIR UP WATERS TO CATCH FISH</strong></h2><p id="9723314c-3dba-4c67-87c6-da1252c5666e" class="">Greene emphasises the importance of always remaining calm. He explains that expressing anger and emotion is never going to get the desired result. Even if your opponent or enemy is expressing their anger, if you remain calm and level-headed you will be the one with all the power and the overall advantage.</p><blockquote id="cd4ad8bf-76d3-4826-a398-890a4171feba" class="">”Put your enemies off-balance: Find the chink in their vanity through which you can rattle them and you hold the strings.”CLICK TO TWEET</blockquote><h2 id="a7d625cd-8e86-4d5b-8e7a-bc0101974d34" class=""><strong>LAW 40: DESPISE THE FREE LUNCH</strong></h2><p id="d822ed1e-ce16-4695-91f8-dac320dea270" class="">Greene explains that anything worth having, is worth paying for, and anything for free, isn’t worth having. Greene emphasises that anything being offered for free usually has a consequence whether it be a hidden obligation or misleading trickery. If you ensure that you always pay for everything, you can be confident you are avoiding any cases of deceit. Further to avoiding freebies, Greene believes that you should always pay full price, never ever barter on cost. Being generous and confident with your money is a representation of your power.</p><h2 id="926a60c8-bfd1-4cde-b5ef-e9584a763a05" class=""><strong>LAW 41: AVOID STEPPING INTO A GREAT MAN’S SHOES</strong></h2><p id="bc312422-7612-4a6a-af4d-c5e0c83bb497" class="">Greene acknowledges that it can be difficult to have an extremely successful parent or to be stepping into the role of someone who was great and impressive. It’s important that you don’t let yourself be overwhelmed by their successes and stuck in their shadow. You are entitled to your own achievements, and your own identity, you do not have to simply become then. Greene explains that yes, you will have to accomplish more than they ever did in order to outshine them. But you are capable of doing this and if you do so in your own way your power will increase tenfold.</p><h2 id="5d7e6d2c-817e-4126-8ddb-fd9f8d982fb7" class=""><strong>LAW 42: STRIKE THE SHEPHERD AND THE SHEEP WILL SCATTER</strong></h2><p id="92737a39-5f7c-4cd0-8a14-161d43319f55" class="">Greene explains that a powerful and strong individual will likely be arrogant and regularly stir up trouble. These people are the source of a lot of distress and drama. Greene explains that allowing these people to influence you and others is damaging, and you will certainly be met with trouble. However, you cannot simply negotiate with them, these are the kind of people who need to be isolated completely. Don’t let others flock to them either.</p><blockquote id="2c4e9dbe-b2e0-4352-9e3c-f1703a09d40c" class="">”Neutralise their influence by isolating or banishing them. Strike at the source of the trouble and the sheep will scatter.”</blockquote><h2 id="f92b09fe-b2cd-404d-9f5b-b77c6a3d489d" class=""><strong>LAW 43: WORK ON THE HEARTS AND MINDS OF OTHERS</strong></h2><p id="bf2e0003-34e7-40d5-95d8-3206c5d14333" class="">Greene explains that there is a fundamental difference between coercion and seduction. He explains that coercion usually works against you, whereas seduction encourages and entices people in, without them feeling misled. If you can successfully seduce someone, they will continue to be loyal to you. Greene explains that the best way to seduce people is to know what their weaknesses are and to understand how they tick. Remember that everyone is different and you won’t be able to seduce two people in the same way. Consider what is important to them and what they are afraid of. Seducing is the key, whereas coercion is only setting you up to make enemies.</p><h2 id="53c986f9-c20a-43dd-9e88-cff66d575531" class=""><strong>LAW 44: DISARM AND INFURIATE WITH THE MIRROR EFFECT</strong></h2><p id="e75bb674-207f-4157-9bd8-7131bb07cf03" class="">The mirror effect is a tool that Greene recommends you use for deception. He explains that mirroring your enemies is a reflection of their reality, if you act the same way that they do, then they are left confused and unsure of your intentions. On another level, the mirror effect is a tool for mocking and can cause humiliation for your enemies, people often don’t look at themselves nor their actions and by causing them to do so may be confronting. Greene explains that it’s a seduction method as well, you can convince them that you hold the same values and they will easily be influenced by your power.</p><h2 id="e0158503-38dc-4b2b-bde2-d85f6fe69a67" class=""><strong>LAW 45: PREACH THE NEED FOR CHANGE, BUT NEVER REFORM TOO MUCH AT ONCE</strong></h2><p id="0ca0ba1d-e294-48e6-83a1-0e37f00bd456" class="">Greene explains that change is absolutely necessary for any progress or improvements. However, it’s important to keep in mind that as humans, we thrive on habit and routine. Too much change can be unsettling and leave people unsure. If you have recently stepped into a new role, resist the temptation to implement radical change, respect the way things have been done in the past and inflict change at a slow, gradual rate. This way, people will respond to you better and respect your position.</p><h2 id="ac35a0d8-c49c-4497-8dab-0a28297e53f3" class=""><strong>LAW 46: NEVER APPEAR TOO PERFECT</strong></h2><p id="a51a88be-845e-43a3-8329-8c24272c4396" class="">Most people feel like they are constantly striving for perfection, and never really reach it. And this is important to keep in mind. Greene explains that if you appear to have to weaknesses or faults if you appear too ‘perfect’ then you are putting yourself in danger. Envy is a common trait and can cause people to act in dangerous ways, if you appear too perfect, you will face envious reactions from others. Alternatively, if you appear to have your own weaknesses, people will see you as more approachable and believable. Greene explains that perfection is something we can only attribute to gods or to the dead.</p><h2 id="f5aeee44-f811-44a4-9e28-2160f478e7f1" class=""><strong>LAW 47: DO NOT GO PAST THE MARK YOU AIMED FOR; IN VICTORY, LEARN WHEN TO STOP</strong></h2><p id="1a15326c-6f1f-4b8a-bbcd-678744b40950" class="">The 47th law is often a tricky one to overcome, everyone loves the feeling of success, accomplishment and the feeling that you’ve reached victory. It’s so important in these times to keep a level head and don’t push even further. As Greene mentioned in previous goals, it’s important to know the whole plan and the end goal, and once you reach that goal, you need to stop. By taking things too far you are likely to end up making more enemies and your success will begin to hinder.</p><blockquote id="c6e4a304-3328-41cb-98f1-76ebfe48d458" class="">”There is no substitute for strategy and careful planning. Set a goal, and when you reach it, stop.”CLICK TO TWEET</blockquote><h2 id="d3271e36-790b-4154-bd62-c71983f885ec" class=""><strong>LAW 48: ASSUME FORMLESSNESS</strong></h2><p id="789b0eac-6eb4-4e10-83d2-c62b211fccc6" class="">Greene emphasises the importance of remembering that nothing is ever certain and everything is susceptible to change. For this reason, you cannot reveal your clear and strategic plans. By revealing your plans, you become vulnerable and an enemy would know how to attack you. Greene explains that you need to remain adaptable, appear fluid and be able to react to any outcome. He explains that you cannot rely on stability as nothing is truly stable. By getting to comfortable you only weaken yourself.</p><h3 id="254e9a2a-b97a-4984-b098-bc95d6ea8234" class=""><strong>Key takeaways</strong></h3><ul id="0e34b0d8-5e3d-47b2-8f96-723f6a280c3d" class="bulleted-list"><li style="list-style-type:disc">There are a few common themes that recur throughout Greene’s laws:</li></ul><ul id="baebc534-fe98-4080-be95-b689c5661aac" class="bulleted-list"><li style="list-style-type:disc">Appearance is important, as is reputation.</li></ul><ul id="fc6ea169-a6ce-4c00-8e73-8aa635f62caf" class="bulleted-list"><li style="list-style-type:disc">You want attention as much as possible and need to do whatever you can to encourage it. Don’t blend into the crowd.</li></ul><ul id="d15c4f71-8e5d-40a6-b67c-1a4eda4afe0e" class="bulleted-list"><li style="list-style-type:disc">Learn as much about other people as possible, consider their weaknesses and use this to your advantage.</li></ul><ul id="43e2ec04-7fde-4de1-b83e-0a7eff4852e1" class="bulleted-list"><li style="list-style-type:disc">Keep your own hands clean and shift blame to other people, again, it’s about keeping your reputation squeaky clean.</li></ul><ul id="cb396ab0-c0ce-4655-8800-aeda821b5a5e" class="bulleted-list"><li style="list-style-type:disc">You want people to respect you and depend on you. Don’t ever give other people too much power or knowledge.</li></ul><ul id="cf51b973-1c92-461c-a1a9-4411c11a3003" class="bulleted-list"><li style="list-style-type:disc">Use the element of mystery to your advantage, don’t ever reveal too much.</li></ul><ul id="cfa6c9fd-8084-4ac1-a99e-14c6a436cf79" class="bulleted-list"><li style="list-style-type:disc">Always have a plan and know the end goal. Never agree to anything if you are unprepared.</li></ul><ul id="5d2d2d15-8f03-4f16-a211-f513c08167e3" class="bulleted-list"><li style="list-style-type:disc">Arguments and anger are counter-productive, be the bigger man and be patient and calm.</li></ul><ul id="e956d1c1-c3b9-4eab-bea4-e074f3e0e971" class="bulleted-list"><li style="list-style-type:disc">You still want to appear human and approachable, don’t be too perfect.</li></ul><ul id="d38d67cb-a32d-4cc7-b738-be05df6bf0ab" class="bulleted-list"><li style="list-style-type:disc">You have to learn how to seduce people.</li></ul><ul id="0b99ef6b-6787-4e05-84bc-eb4d8d60f2a3" class="bulleted-list"><li style="list-style-type:disc">Enemies are just as, if not more important than your friends. Keep them close and learn everything about them.</li></ul><ul id="522c2d7e-bb29-4057-ba1c-23ae6eb0ffd1" class="bulleted-list"><li style="list-style-type:disc">Don’t get greedy, stick to your plans.</li></ul><h3 id="c175d554-92b7-4c51-a455-e58d0055a0bb" class=""><strong>Action Steps</strong></h3><ul id="3edb1528-4e5f-4e55-8028-1682e3fe9c48" class="bulleted-list"><li style="list-style-type:disc">Remember that even Greene doesn’t follow all of his laws, especially not at once. Consider which laws are applicable to you and your current situation and see if you can adopt them one at a time.</li></ul><ul id="7b623a1f-28b8-46a1-9ddf-bc9d1e3f87a8" class="bulleted-list"><li style="list-style-type:disc">Consider the key themes, always maintain a squeaky clean reputation.</li></ul><ul id="ce405594-4de7-401f-9a9c-68685a55ca4b" class="bulleted-list"><li style="list-style-type:disc">When interacting with people, whether they be your friend or your enemy, take the opportunity to learn as much about them as possible, you never know when this will come in handy.</li></ul><ul id="a0d96690-a80b-4109-bc46-ad9e0c09763c" class="bulleted-list"><li style="list-style-type:disc">Remember that less is more, never give away more information than absolutely necessary.</li></ul><ul id="3246f4bf-7e40-47a5-96fd-0ec5c56fb0c6" class="bulleted-list"><li style="list-style-type:disc">Avoid arguments and expressing your anger or emotions at all costs.</li></ul><p id="4f914560-2277-4ea9-93c5-34815e5e7556" class="">
+</p></div></article></body></html>

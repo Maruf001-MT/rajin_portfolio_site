@@ -24428,7 +24428,7 @@
           i = document,
           a = t("html"),
           o = t("body"),
-          s = ".w-webflow-badge",
+          s = ".#",
           l = window.location,
           h = /PhantomJS/i.test(navigator.userAgent),
           c =
@@ -24460,9 +24460,9 @@
                 !h &&
                 ((e =
                   e ||
-                  ((r = t('<a class="w-webflow-badge"></a>').attr(
+                  ((r = t('<a class="#"></a>').attr(
                     "href",
-                    "https://webflow.com?utm_campaign=brandjs"
+                    "#"
                   )),
                   (n = t("<img>")
                     .attr(

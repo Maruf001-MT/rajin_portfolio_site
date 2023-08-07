@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Building a Second Brain by Tiago Forte</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="cf0ebf90-ab53-4e62-a848-1555491e880b" class="page sans"><header><h1 class="page-title"><strong><strong>Building a Second Brain by Tiago Forte</strong></strong></h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><td><span class="selected-value select-value-color-green">Pre-processed</span></td></tr></tbody></table></header><div class="page-body"><h1 id="af0a473e-8cee-47be-b57e-5ea20c1128df" class=""><strong>The Five Big Ideas</strong></h1><ol type="1" id="267ee85d-ebe8-4b82-a554-26d8519df1b6" class="numbered-list" start="1"><li>Capture only the ideas and insights we think are truly noteworthy.</li></ol><ol type="1" id="e62f5def-c313-417c-8dd1-cd487371f920" class="numbered-list" start="2"><li>Organize your notes for action, according to the active projects you are working on right now.</li></ol><ol type="1" id="c6de2f28-8305-4b2a-8e98-286b02cbe59a" class="numbered-list" start="3"><li>Turn the ideas you capture and organize them into your own message.</li></ol><ol type="1" id="41f185c5-4c15-4e7e-9637-756262e36694" class="numbered-list" start="4"><li>Draw on the material you distill and use it to express your own point of view.</li></ol><ol type="1" id="2d494d6c-ec42-436b-a555-d3c9c401b076" class="numbered-list" start="5"><li>Highlight the main points of each note, and then highlight the main points of <em>those</em> highlights to distill the essence of a note in several “layers.”</li></ol><h1 id="b994919c-48a4-4b0e-ab47-f067a27e2c7d" class=""><strong>Building a Second Brain Summary</strong></h1><p id="1a8ccae1-cdd2-4f6a-8125-24c7273bc280" class="">Information lies at the heart of everything we do. Yet, in today’s digital age, where the world’s knowledge is more accessible than ever, we’re paralyzed with indecision about where to focus our attention.</p><p id="55dae77c-bc17-4aa2-bc12-414e0b491e62" class="">We need to manage information more effectively to get ahead and arm ourselves with the knowledge that will help us achieve our biggest, most audacious goals. We need, what Forte calls, a Second Brain.</p><h1 id="99e5a0a1-6ed8-4a86-bf2b-1ea56adac2ee" class=""><strong>What Is a Second Brain?</strong></h1><p id="3d5622c4-b42a-4010-9124-012083dc2497" class="">A Second Brain is a digital commonplace book. Part study notebook, part notebook, and part sketchbook for new ideas, <strong>a second brain is a private knowledge collection designed to serve a lifetime of learning and growth.</strong></p><p id="a2e37a6c-fae2-4a78-9924-18ae5b731156" class="">If you’re a knowledge worker—a professional for whom your knowledge is your most valuable asset—your knowledge is the basis for regularly coming up with ideas, solving problems, and communicating effectively with others.</p><p id="f4013395-98dd-4ad7-8912-cd2417d9d417" class="">Notetaking, says Forte, is one such way of storing knowledge:</p><blockquote id="61303c5a-1a18-4ea6-9222-5f08a4d16b38" class="">For modern, professional notetaking, a note is a “knowledge building block”—a discrete unit of information interpreted through your unique perspective and stored outside your head.</blockquote><p id="78131939-6420-45e7-b775-da26e20da793" class="">If a piece of content has been interpreted through your lens, curated according to your taste, translated into your own words, or drawn from your life experience, and stored in a secure place, then it qualifies as a note.</p><h1 id="6505d2b8-e468-4dd0-a476-03b44b472ca9" class=""><strong>How a Second Brain Works</strong></h1><p id="33ec2193-a6d9-43de-81ba-66fa625d76cc" class="">There are four essential capabilities that we can rely on a Second Brain to perform for us:</p><ol type="1" id="17fc3892-4086-4a2c-905d-8eca3f3659ff" class="numbered-list" start="1"><li><strong>Making our ideas concrete.</strong> An idea, in its infancy, is abstract. But when we turn an idea into a visual entity, such as a digital note, we can begin to move it from abstract to concrete.</li></ol><ol type="1" id="d6ed9ece-27cc-4c3e-bb6d-d1e9d4e81188" class="numbered-list" start="2"><li><strong>Revealing new associations between ideas.</strong> Formulating ideas is easier when we connect ideas. By keeping all our ideas in one place, we can inspire creativity and bridge gaps in our knowledge.</li></ol><ol type="1" id="bcb56b6e-f901-49b7-bddf-72534afc2309" class="numbered-list" start="3"><li><strong>Incubating our ideas over time.</strong> When we go beyond relying on ideas we can only think of right now, we draw on weeks, months, or even years of accumulated imagination.</li></ol><ol type="1" id="5748db50-eeb9-4adf-a449-880ec22b5491" class="numbered-list" start="4"><li><strong>Sharpening our unique perspectives.</strong> All too often, our creative wells run dry, not because of something wrong with us, but because we don’t yet have enough raw materials to work with.</li></ol><p id="bc242819-c2c2-4f1e-b80f-2c3e38be4028" class="">Digital notes apps have four powerful characteristics that make them ideal for building a Second Brain. They are:</p><ol type="1" id="295dbea6-738a-4929-a4c6-7c30de1e9c02" class="numbered-list" start="1"><li>Multimedia</li></ol><ol type="1" id="50cce50b-7909-4c75-ba37-7ffb14fa70ba" class="numbered-list" start="2"><li>Informal</li></ol><ol type="1" id="5f3e4648-f2c4-4e2f-9af8-b74bfa6852b3" class="numbered-list" start="3"><li>Open-ended</li></ol><ol type="1" id="d1218c82-f99b-436b-9398-c0ea94f01f9b" class="numbered-list" start="4"><li>Action-oriented</li></ol><p id="31adaa57-117f-48ec-a9ef-746af6835c39" class="">There are three stages of progress Forte often observes—and even encourages—as people set out on their Second Brain journey. Those stages are <strong>remembering</strong>, <strong>connecting</strong>, and <strong>creating</strong>.</p><p id="9c30380a-da2b-4f77-bdbf-a4bbe721e294" class="">The first way people use their Second Brain is <strong>as a</strong> <strong>memory aid.</strong> The second way that people use their Second Brain is to <strong>connect ideas.</strong> The third and final way that people use their Second Brain is <strong>to create new things.</strong></p><p id="ed29ec86-f4cd-4e48-befe-4c03c37de52d" class="">To help guide people in creating a Second Brain, Forte has developed a simple, intuitive four-part method called “CODE”—Capture; Organize; Distill; Express—which he explains throughout the remaining chapters.</p><h1 id="2074c3f8-2c8b-4fcc-ad49-44bb33f5656a" class=""><strong>Capture—Keep What Resonates</strong></h1><p id="a4d54eb4-a1b7-467f-9bd8-6b2a0180651f" class="">Knowledge is everywhere, waiting to be discovered. But knowledge isn’t limited to the pages of didactic pursuits or academic journals. Forte writes, “Knowledge capture is about mining the richness of the reading you’re already doing and the life you’re already living.”</p><p id="4d2cdb71-5eae-4090-8707-e9c842401f91" class="">Capturing a knowledge asset—anything that we can use in the future to <strong>solve a problem</strong>, <strong>save time</strong>, <strong>illuminate a concept</strong>, or<strong> learn from a past experience</strong>—can help spark new creative ideas and realization in your inner world.</p><p id="a6ba4d2e-1c66-41ff-b3fc-e39e19b1a576" class="">To help inform knowledge worth collecting and preserving, Forte suggests writing down your “Twelve Favorite Problems,” inspired by Nobel Prize-winning physicist Richard Feynman.</p><p id="40398774-5c95-4789-a51b-81ad4db2caae" class="">“You have to keep a dozen of your favorite problems constantly present in your mind,” Feynman told one interviewer. “Every time you hear or read a new trick or a new result, test it against each of your twelve problems to see whether it helps.”</p><p id="1f739533-6b4c-4636-82e1-7dde5084fc24" class="">A few examples of favorite problems from Forte’s past students include,</p><ul id="04eceb97-1d0f-49b7-b403-c073b59cd52d" class="bulleted-list"><li style="list-style-type:disc">How can we make society fairer and more equitable?</li></ul><ul id="9004f0c1-6cbd-4cd4-af4d-8a1ccd218e6c" class="bulleted-list"><li style="list-style-type:disc">How can I make it a habit to exercise every day?</li></ul><ul id="5ff8c33f-ffe6-4330-9d02-c912c0b1a0b1" class="bulleted-list"><li style="list-style-type:disc">How can I have closer relationships with the people I love?</li></ul><ul id="144e0920-072f-4d16-be9b-f6955bf64f6c" class="bulleted-list"><li style="list-style-type:disc">How can I spend more of my time doing high-value work?</li></ul><ul id="ce79515d-2af6-4040-9d8c-d46c34a5a0fe" class="bulleted-list"><li style="list-style-type:disc">How do I live less in the past and more in the present?</li></ul><ul id="be37e093-d391-47ba-8717-9162afc87e9a" class="bulleted-list"><li style="list-style-type:disc">How do I build an investment strategy that is aligned with my mid-term and long-term goals and commitments?</li></ul><ul id="f81aca80-f00d-4157-b2ed-cee4e914996c" class="bulleted-list"><li style="list-style-type:disc">What does it look like to move from mindless consumption to mindful creation?</li></ul><ul id="d188d622-443c-47da-bb37-960fc07840cf" class="bulleted-list"><li style="list-style-type:disc">How can I go to bed early instead of watching shows after the kids go to bed?</li></ul><ul id="21577ac1-bb5f-4b30-84d6-59e270be4d3c" class="bulleted-list"><li style="list-style-type:disc">How can my industry become more ecologically sustainable while remaining profitable?</li></ul><ul id="7a8e2885-406c-4ddf-b3be-d309b6822c04" class="bulleted-list"><li style="list-style-type:disc">How can I work through the fear I have of taking on more responsibility?</li></ul><ul id="98631645-3722-4584-9056-a2b73cc33476" class="bulleted-list"><li style="list-style-type:disc">How can my school provide more resources for students with special needs?</li></ul><ul id="04f596b5-7bb7-4595-8011-72e13c557766" class="bulleted-list"><li style="list-style-type:disc">How do I start reading all the books I already have instead of buying more?</li></ul><ul id="c63a0867-0d08-44c8-b8d9-68213b35b89a" class="bulleted-list"><li style="list-style-type:disc">How can I speed up and relax at the same time?</li></ul><ul id="7f6ce8ad-02f9-4747-a614-76709fbff1e6" class="bulleted-list"><li style="list-style-type:disc">How can we make the healthcare system more responsive to people’s needs?</li></ul><ul id="b3d252db-f5a3-4741-b944-d57335ba8a81" class="bulleted-list"><li style="list-style-type:disc">What can I do to make eating healthily easier?</li></ul><ul id="863fd04f-bda6-4580-80be-3d3e2f46f1fa" class="bulleted-list"><li style="list-style-type:disc">How can I make decisions with more confidence?</li></ul><p id="7f2a1ad0-a286-4522-badb-81a8bd44172b" class="">One of the biggest pitfalls of capturing digital notes, says Forte, is saving too much and risking inundating your future self with tons of irrelevant information. To help decide which nuggets of knowledge are worth keeping, ask yourself the following:</p><ol type="1" id="61d60d9d-0173-4881-8664-1d46cf9fd012" class="numbered-list" start="1"><li>Does it inspire me?</li></ol><ol type="1" id="47bf173f-b5a8-43f9-9466-580e36a479b5" class="numbered-list" start="2"><li>Is it useful</li></ol><ol type="1" id="c5c39aec-e628-4f8f-982b-256d0a1424ed" class="numbered-list" start="3"><li>Is it personal?</li></ol><ol type="1" id="30e1f03f-9c8f-48f1-b09b-e10a5e807fd6" class="numbered-list" start="4"><li>Is it surprising?</li></ol><h1 id="a30f2137-1b53-4247-9027-07b2155a098e" class=""><strong>Organize—Save for Actionability</strong></h1><p id="28c989d3-ae85-41d9-a189-4abfbcc120ae" class="">Forte found that most organization systems, while well-meaning, complicated his life and kept him from his priorities. One day, after realizing the ease behind dropping all his notes and files into a folder for which project he was focusing on, he made his own organization system called PARA, which stands for <strong>Projects</strong>, <strong>Areas</strong>, <strong>Resources</strong>, and <strong>Archives</strong>.</p><p id="1d712aee-cce0-4b29-9d2e-8e5f5a7e6c38" class="">Projects are short-term efforts in your work or life that you’re working on, such as projects at work (complete webpage design) or personal projects (finish Spanish language course). Areas are the long-term responsibilities you want to manage over time (e.g., “Finances”). Resources are topics or interests that may be useful in the future but don’t belong to a project or an area. Archives are inactive items from the other three categories, including completed or canceled projects, areas of responsibility that you are no longer committed to maintaining, and resources that are no longer relevant.</p><p id="32115d63-3230-4d8d-b792-42a136f00b0a" class="">Here’s how Forte explains PARA in his own words,</p><blockquote id="3ae6aea4-9735-4373-8620-7b43d5adaa8f" class="">PARA can handle it all, regardless of your profession or field, for one reason: it organizes information based on how actionable it is, not what kind of information it is.</blockquote><p id="42612e5f-0da8-437e-918c-266dd93aa275" class="">Forte expands on this idea by comparing PARA and how kitchens are organized. Everything in a kitchen is designed and organized to support an outcome, not by kind of food. Everything in PARA, by contrast, must be organized according to <em>where ideas are going</em> (i.e., the outcomes they can help you realize), not <em>where they came from</em>.</p><h1 id="9aceee51-37c7-4fe5-94e9-1808ab7e8064" class=""><strong>Distill—Find the Essence</strong></h1><p id="b4b3aada-62a0-4822-8e72-fd4f23f9c754" class="">The third step of Forte’s CODE model, Distill, is about taking the ideas we’ve captured and organized and turning them into our own messages. To do that, we need to highlight our notes’ most important points to improve their <em>discoverability</em>—the ease behind how quickly we can access the specific points that are most immediately useful. (Forte adds at the conclusion of the chapter that a true test of whether a note you’ve created is discoverable is whether you can get the gist of it at a glance.)</p><p id="c02563a9-8585-4e34-8da4-5c1e2d7fd704" class="">The technique Forte teaches to distill notes down to their most important points is called “Progressive Summarization,” which involves taking the raw notes you’ve captured and organized and distilling them into usable material that can directly inform a current project.</p><p id="3076aca8-c43e-4f0a-aca2-1f2c53a3cb53" class="">Here’s how Forte explains Progressive Summarization,</p><blockquote id="4b0d470d-6238-4f24-8e02-5b3290c6d498" class="">The technique is simple: you highlight the main points of a note and then highlight the main points of those highlights, and so on, distilling the essence of a note in several “layers.” Each of these layers uses a different kind of formatting so you can easily tell them apart.</blockquote><p id="382ed032-ed56-4857-b015-1fc67c13112a" class="">The first layer comprises the chunks of text initially captured in your notes. But to enhance the discoverability of a note, you need to a second later of distillation: <strong>bold the main points within the note.</strong> That might include keywords that provide hints of what the text is about, phrases that capture what the original author was trying to say, or sentences that especially resonate with you.</p><p id="c36dafbb-4ba3-4cfd-8b25-e176935c9f58" class="">However, it’s sometimes worth adding a third layer of emphasis using the “highlighting” feature in your notetaking app for notes that are especially long, interesting, or valuable.</p><p id="3171f07a-500d-4ced-97e4-0c54e60688ad" class="">For the final layer, reserved only for the very few truly unique and valuable sources, you can <strong>add an “executive summary” at the top of the note with a few bullet points summarizing the article in your own words.</strong></p><p id="ffca0431-e208-4c55-b434-b00cd95f38ef" class="">To borrow a meta example, you might have noticed that I’ve used the second layer, bolding, throughout this book summary. For a more in-depth example, here’s how I use Progressive Summarization to improve the discoverability of a book summary in <a href="https://notion.grsm.io/mopzbfs6aeqy">Notion</a>:</p><figure id="356d1439-40f3-4f9f-9fb6-2e0591bd3a48" class="image"><a href="https://i2.wp.com/www.samuelthomasdavies.com/wp-content/uploads/2022/06/Progressive-Summarization-for-Atomic-Habits.png?resize=1024%2C551&amp;ssl=1"><img style="width:700px" src="https://i2.wp.com/www.samuelthomasdavies.com/wp-content/uploads/2022/06/Progressive-Summarization-for-Atomic-Habits.png?resize=1024%2C551&amp;ssl=1"/></a></figure><p id="adf93fd4-88fc-496b-9f3d-c499d48550bd" class="">Forte concludes his chapter on distillation by offering a few guidelines to help avoid the three common pitfalls when highlighting your own notes:</p><ol type="1" id="250053c3-6a2c-4dd0-b9d5-d0bab5cbc15e" class="numbered-list" start="1"><li><strong>Mistake #1: Over-Highlighting. </strong>A helpful rule of thumb is that each layer of highlighting should include no more than 10–20 percent of the previous layer.</li></ol><ol type="1" id="6f1ea77e-8c62-49a1-8047-05b4a843942e" class="numbered-list" start="2"><li><strong>Mistake #2: Highlighting Without a Purpose in Mind. </strong>The rule of thumb to follow is that every time you “touch” a note, you should make it a little more discoverable for your future self—by adding a highlight, a heading, some bullets, or commentary.</li></ol><ol type="1" id="59690aa2-15ce-4ca3-a21c-83ca095a5b12" class="numbered-list" start="3"><li><strong>Mistake #3: Making Highlighting Difficult. </strong>Rely on your intuition to tell you when a passage is interesting, counterintuitive, or relevant to your favorite problems or current project.</li></ol><h1 id="626c4436-aa0f-4237-92e4-d7540b0a7518" class=""><strong>Express—Show Your Work</strong></h1><p id="a4e10f2c-647d-4d19-b53d-be20a7c1993e" class="">Suppose we assume that creativity emerges not from flashes of brilliance but from the everyday efforts to gather and organize our influences. In that case, we can begin expressing our ideas earlier, more frequently, and in smaller chunks to test what works and gather feedback from others.</p><p id="ff2da64c-62e3-4b74-aec4-15a38a9512ac" class="">Our ideas—distilled notes, outtakes, work-in-process, final deliverables, documents created by others—are the concrete, individual building blocks (or Intermediate Packets, as Forte calls them) that we can <em>create</em> and <em>reuse</em> in our work.</p><p id="126919ee-d7f0-4bda-a9d1-c8f1f2810af6" class="">Take planning a conference, to borrow an example from the book. You might think you have to plan such a mega-project from scratch. But if you look at its Intermediate Packets (IPs)—a conference agenda, a list of interesting breakout sessions, a checklist for streaming the keynote sessions, to name a few—you might realize that you could, instead, <em>acquire</em> or <em>assemble</em> each Packet from a previous event you attended.</p><p id="36872a9b-f8e8-437f-8ca4-f2c75faf8124" class="">In truth, creativity isn’t about copying or even modeling others. Rather, creativity is about tapping into the essential ideas you distilled in the previous step, Distill, and combining them into something new, perhaps even changing our trajectory in the process.</p><p id="d99d074b-47e0-4795-868f-282c40d4d2e3" class="">Of course, given the unpredictability between IPs we’ve saved in the past the future projects, there’s no single, perfectly reliable retrieval system for finding them when you need them. To help, Forte offers four retrieval methods we can use in our notetaking apps:</p><ol type="1" id="94974873-138a-4bbc-8138-660d6e91c23c" class="numbered-list" start="1"><li><strong>Retrieval Method #1: </strong>Search</li></ol><ol type="1" id="e4afc54c-0f29-4265-8a80-5058cac03d17" class="numbered-list" start="2"><li><strong>Retrieval Method #2:</strong> Browsing</li></ol><ol type="1" id="09d1e384-ec85-411a-91e4-16eceec54111" class="numbered-list" start="3"><li><strong>Retrieval Method #3: </strong>Tags</li></ol><ol type="1" id="25e9db6a-1853-4dea-90f6-a29ffd885983" class="numbered-list" start="4"><li><strong>Retrieval Method #4:</strong> Serendipity</li></ol><h1 id="1e6d093a-5ff1-4ff1-a081-d2c736dd783d" class=""><strong>Additional Notes and Highlights</strong></h1><ul id="95eb7aa0-5d72-41db-b38f-63be26c54ce4" class="bulleted-list"><li style="list-style-type:disc">“We spend countless hours reading, listening to, and watching other people’s opinions about what we should do, how we should think, and how we should live, but make comparatively little effort applying that knowledge and making it our own. So much of the time we are ‘information hoarders; stockpiling endless amounts of well-intentioned content that only ends up increasing our anxiety.”</li></ul><ul id="89701a34-5d25-4c92-b70d-74e238d78a1a" class="bulleted-list"><li style="list-style-type:disc">“To be able to make use of information we value, we need a way to package it up and send it through time to our future self. We need a way to cultivate a body of knowledge that is uniquely our own, so when the opportunity arises—whether changing jobs, giving a big presentation, launching a new product, or starting a business or a family—we will have access to the wisdom we need to make good decisions and take the most effective action. It all begins with the simple act of writing things down.”</li></ul><ul id="7123434c-de1b-4cdf-b700-898bc90ed4cc" class="bulleted-list"><li style="list-style-type:disc">“If a piece of content has been interpreted through your lens, curated according to your taste, translated into your own words, or drawn from your life experience, and stored in a secure place, then it qualifies as a note.”</li></ul><ul id="600d5cad-f0aa-45be-9c56-851bfea865c1" class="bulleted-list"><li style="list-style-type:disc">To avoid information overload, <em>keep only</em> <em>what resonates</em> in a trusted place that you control and leave the rest aside.</li></ul><ul id="712a81eb-8c2e-4885-8b6f-fdab0b3820b6" class="bulleted-list"><li style="list-style-type:disc">“The best way to organize your notes is to <em>organize for action</em>, according to the active projects you are working on right now. Consider new information in terms of its <em>utility</em>, asking, ‘How is this going to help me move forward with one of my current projects?’”</li></ul><ul id="d1b38171-ceac-47a3-a490-00e87b974810" class="bulleted-list"><li style="list-style-type:disc">“Every time you take a note, ask yourself, ‘How can I make this as useful as possible for my future self?’ That question will lead you to annotate the words and phrases that explain why you saved a note, what you were thinking, and what exactly caught your attention. Your notes will be useless if you can’t decipher them in the future or if they’re so long that you don’t even try. Think of yourself not just as a taker of notes, but as a giver of notes—you are giving your future self the gift of knowledge that is easy to find and understand.”</li></ul></div></article></body></html>

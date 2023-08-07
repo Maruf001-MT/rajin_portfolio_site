@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>How to Win Friends &amp; Influence People by Dale Carnegie</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body style="background-color: #242424; color: white;"><article id="9576fae2-323c-4a63-a55c-fd4a41566aef" class="page serif"><header><h1 class="page-title"><strong><strong>How to Win Friends &amp; Influence People by Dale Carnegie</strong></strong></h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><td><span class="selected-value select-value-color-green">Pre-processed</span></td></tr></tbody></table></header><div class="page-body"><h3 id="73dad47a-db38-4474-8bc8-b81e1a366cb3" class=""><strong>FUNDAMENTAL TECHNIQUES IN HANDLING PEOPLE</strong></h3><p id="1a2d7d5f-0ad1-47c2-a6c8-00ca9494f658" class="">Carnegie’s first concept is about handling people and what techniques to use. There are 3 key principles that you need to follow when handling people, whether they are acquaintances, colleagues, employees or employers.</p><ol type="1" id="3a484179-88f5-4f18-9cab-da562b025e65" class="numbered-list" start="1"><li>Don’t criticise, condemn or complain</li></ol><ol type="1" id="00bdda22-9bf6-4cc9-8b54-a9cc373d9622" class="numbered-list" start="2"><li>Give honest and sincere appreciation</li></ol><ol type="1" id="2af67079-959c-4d3f-b425-41c24ee3c984" class="numbered-list" start="3"><li>Arouse in the other person an eager want.</li></ol><h3 id="0f811483-e764-4cc6-b1a8-8641ced6086e" class=""><strong>Try to be understanding.</strong></h3><p id="03518e55-842c-45fe-a6eb-bcad2af2c7db" class="">Carnegie’s first principle encourages you to get to know people, understand what makes them tick. The key is to find out what motivates their behaviour, personality, and their actions. Instead of instantly criticising, condemning or complaining about someone, gain empathy and understanding. To show some kindness is always beneficial for both parties. Be tolerant and sympathetic when required.</p><blockquote id="1fca4cc6-15cc-46b9-a720-b126c9080ec2" class="">”To know all is to forgive all.”</blockquote><h3 id="1fe11e6c-b52f-4288-906b-8c77c49e0af2" class=""><strong>Honesty is everything</strong></h3><p id="77b4b1ec-312f-4c5c-9f0a-59236831d11f" class="">The second principle; give honest and sincere appreciation is really important. We’re all human, and we all enjoy feeling appreciated. When you show someone appreciation and are honest, people will recognise your sincerity, they’ll be able to tell if you’re just saying what you think they want to here. True appreciation expressed through kind words is something people will never forget, it lifts them up and makes them feel good about themselves.</p><h3 id="2386f89a-6b3d-4543-8445-a0c5bbe6719f" class=""><strong>Make them want it too</strong></h3><p id="9aea650e-c05f-4a63-8baa-612789bb018a" class="">Carnegie explains that the only way you’re ever going to convince anyone to do something you want them to do is to make them want to do it do. We are stubborn, we have to feel motivated to do things. Instead of boasting about ideas you’ve had, and things you need to be done. Sit back, and let others think they came up with the idea themselves, let them feel a responsibility towards it and own it. This will create a drive within them, a want to succeed, and you will reap the benefits.</p><blockquote id="c1e67599-e972-43c5-958e-1bc649a01ea1" class="">”First, arouse in the other person an eager want. He who can do this has the whole world with him. He who cannot, walks a lonely way.”</blockquote><h2 id="277cd52b-c9b2-403d-9d9e-19d54360618d" class=""><strong>WAYS TO MAKE PEOPLE LIKE YOU</strong></h2><p id="8d69b0cb-d350-4717-befb-95f0bb6e1cf7" class="">Something we all crave is acceptance from other people, Carnegie’s second concept outlines 6 principles to help you get other people to like you.</p><ol type="1" id="f59fd747-7e2f-43cc-9cbc-3a5161b08bd2" class="numbered-list" start="1"><li>Be genuinely interested in other people.</li></ol><ol type="1" id="36b24ace-7dd3-461c-8d2f-14eece06ffc1" class="numbered-list" start="2"><li>Smile.</li></ol><ol type="1" id="ce63fead-f326-4c38-8e52-1720ecb7cfeb" class="numbered-list" start="3"><li>Remember that a person’s name is important.</li></ol><ol type="1" id="fd3dd7c7-5c22-4a0d-a0d6-262213247c8e" class="numbered-list" start="4"><li>Be a good listener and encourage others to talk about themselves.</li></ol><ol type="1" id="316ab40c-3da0-48e7-a765-f7ee5942d30f" class="numbered-list" start="5"><li>Talk in terms of the other person&#x27;s interests.</li></ol><ol type="1" id="6cf02d43-4081-4893-a395-66f1471ca20b" class="numbered-list" start="6"><li>Make the other person feel important, and do it sincerely.</li></ol><h3 id="96c00cfd-0535-4358-b727-c23245d71206" class=""><strong>It’s not all about you</strong></h3><p id="9b265434-72d6-4376-ac68-0495758763f7" class="">Carnegie reminds us that in order to make true friendships, you have to be there to help others, not just there to get the help you need. If you can show a genuine interest in other people, then you’ll be well on your way to getting people to like you.</p><p id="1dcf67d7-e9c1-40b5-8e79-d27535885592" class="">In order to future a relationship, you have to go above and beyond for other people. You need to show them that they are worth your time and energy and that you can be thoughtful, sympathetic and selfless.</p><p id="e86728fd-5e3b-47e2-840e-df5d224020a9" class="">An example that Carnegie uses to exemplify this is that when the then Prince of Wales was due for a tour around South America, he spent months learning Spanish. He did this so he could make appearances and do his public speaking in the native language so that everyone would have the opportunity to understand what he was saying, not just those able to speak English. This shows that he went above and beyond for the natives, he spent time and energy learning a language so that everyone could be included.</p><h3 id="144956eb-b954-4ba0-85ee-60d085e2e244" class=""><strong>Practice your smile</strong></h3><blockquote id="c946a0ec-4f75-48ec-b910-65adb10d6c50" class="">”Your smile is a messenger of your good will. Your smile brightens the lives of all who see it.”</blockquote><p id="8cc6d41a-747c-4adf-b1ed-3b3eefa613c9" class="">It’s hard to explain just how impactful a smile can be. Carnegie explains that you have no idea how someone&#x27;s day might be going, the personal pressure they are under. But a simple smile, from someone they know or a stranger, can help lift their mood and motivate them to smile too.</p><p id="445aad8f-cfcd-4139-9ae3-5274619f01a8" class="">Smiling makes you seem relatable and approachable. Don’t walk around with a constant frown or you’ll put people off.</p><h3 id="73f1f402-9931-4895-a00d-1e951a2e9316" class=""><strong>It’s all in the name</strong></h3><blockquote id="09fa5b1e-ebde-48fb-b9ef-72b45da292e8" class="">”Remember that a person&#x27;s name is to that person the most important sound in any language.”</blockquote><p id="4719a3ba-d329-453b-b2d8-a04be99c26bd" class="">Your name is rightfully yours, it’s part of your identity and sets you apart from other people. Take note when people tell you their names and repeat it back to them. We love to hear our own names, it makes us feel special and important. Carnegie encourages you to use this tactic with everyone whether it be the coffee barista at your local cafe or the senior executive at your firm.</p><p id="bd9c5f15-431c-4a79-a4d1-dc2fb8518f7d" class=""><a href="https://twitter.com/share?text=%E2%80%9DRemember+that+a+person%27s+name+is+to+that+person+the+most+important+sound+in+any+language.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/how-to-win-friends-influence-people-book-summary-pdf/"><strong><strong>”Remember that a person&#x27;s name is to that person the most important sound in any language.”</strong></strong></a><a href="https://twitter.com/share?text=%E2%80%9DRemember+that+a+person%27s+name+is+to+that+person+the+most+important+sound+in+any+language.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/how-to-win-friends-influence-people-book-summary-pdf/"><strong>CLICK TO TWEET</strong></a></p><h3 id="da01d089-d7c0-4654-8847-fd623d9a4e25" class=""><strong>Listen, listen, listen!</strong></h3><p id="db371fb6-5bca-419c-8942-435083047697" class="">It’s not enough to simply sit in silence while someone talks, you have to actively listen and be genuinely interested. A good way to express your attentiveness is to ask questions about the topic the other person is discussing, encourage them to delve deeper into the conversation. We love to talk about ourselves, so people often don’t even need a lot of prompting, just give them the opportunity, and listen.</p><blockquote id="8831f702-429c-4ab5-8f5c-f59b0317fc1c" class="">”Remember that the people you are talking to are a hundred times more interested in themselves and their wants and problems than they are in you and your problems.”</blockquote><h3 id="2f267846-e538-4478-8baa-a2d9d6d26e31" class=""><strong>What are their interests?</strong></h3><p id="e71c0de1-45d8-4b02-9a37-04bf8a8d16af" class="">Carnegie explains that when you talk in terms of someone else’s interests, you both reap the benefits. Carnegie uses employee communication expert H. Z. Herzig’s experience to exemplify this point;</p><blockquote id="8e0f1d71-0941-4fbb-a279-78ae6efd685d" class="">“When asked what reward he got from it, Mr. Herzig responded that he not only received a different reward from each person but that in general, the reward had been an enlargement of his life each time he spoke to someone.”</blockquote><h2 id="382df3e6-1514-463b-893b-386946cc1bee" class=""><strong>HOW TO WIN PEOPLE INTO YOUR WAY OF THINKING</strong></h2><p id="ea6b4c85-50d3-43a9-847e-ee82f36bcfc4" class="">This section of Carnegie’s book has 12 principles, all focused on encouraging others into your way of thinking. Here’s how Carnegie recommends you do that:</p><ol type="1" id="c49cf331-d52a-42b0-b156-b1ab3d05aa27" class="numbered-list" start="1"><li>The only way to get the best out of an argument is to avoid it.</li></ol><ol type="1" id="8659b1e8-1328-44f8-b112-0366b511a7b8" class="numbered-list" start="2"><li>Show respect for the other person’s opinions.</li></ol><ol type="1" id="2d5c16fc-0b5d-41bd-b1f8-c50406ef48eb" class="numbered-list" start="3"><li>If you are wrong, admit it.</li></ol><ol type="1" id="ba0645d5-5b3d-43b4-b1ce-655321fa445a" class="numbered-list" start="4"><li>Begin in a friendly way.</li></ol><ol type="1" id="d1484403-60ef-4160-bb13-1c2e7bf772d4" class="numbered-list" start="5"><li>Get the other person saying “yes, yes!”</li></ol><ol type="1" id="80a03077-87c5-45e0-b4da-d6a6a53412cb" class="numbered-list" start="6"><li>Let the other person do a great deal of the talking.</li></ol><ol type="1" id="d4da7346-6953-427f-bf29-7117bf83eb2c" class="numbered-list" start="7"><li>Let the other person feel that an idea is theirs.</li></ol><ol type="1" id="156c4016-9650-403b-b971-dcc6b3642f2d" class="numbered-list" start="8"><li>Try to see things from their point of view.</li></ol><ol type="1" id="5d949122-759d-4845-9346-091292ad9401" class="numbered-list" start="9"><li>Be sympathetic to their opinions and desires.</li></ol><ol type="1" id="e99d8525-c3bc-420e-8163-9a9875742c68" class="numbered-list" start="10"><li>Appeal to the nobler motives.</li></ol><ol type="1" id="d2da2761-beef-4b5b-ae7f-ecff3039b9ba" class="numbered-list" start="11"><li>Dramatise your ideas.</li></ol><ol type="1" id="da21693a-027e-4451-89a7-454e89dbd4a7" class="numbered-list" start="12"><li>Throw down a challenge.</li></ol><h3 id="632a3350-f668-4eb0-8e87-e6fe96466907" class=""><strong>Avoid arguments</strong></h3><blockquote id="9c4c2f99-1ca7-43bc-8e1e-6c0a2908e8ba" class="">”I have come to the conclusion that there is only one way under high heaven to get the best of an argument – and that is to avoid it .”</blockquote><p id="74e22b3e-a440-448a-8aee-a690a4a73d94" class="">Carnegie explains that 90% of the time, arguments don’t end well for either party. Both walk away firmly backing themselves, the result is that everyone ends up more convinced that they are in fact right. It’s very rare that an argument actually comes to a resolution, rather people get fed up arguing and nothing has changed.</p><p id="f34a5274-17c8-4751-8e4d-5a60852f95a4" class=""><a href="https://twitter.com/share?text=%27There+is+only+one+way+under+high+heaven+to+get+the+best+of+an+argument+%E2%80%93+and+that+is+to+avoid+it.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/how-to-win-friends-influence-people-book-summary-pdf/"><strong><strong>&#x27;There is only one way under high heaven to get the best of an argument – and that is to avoid it.”</strong></strong></a><a href="https://twitter.com/share?text=%27There+is+only+one+way+under+high+heaven+to+get+the+best+of+an+argument+%E2%80%93+and+that+is+to+avoid+it.%E2%80%9D&amp;via=paulminors&amp;url=https://paulminors.com/blog/how-to-win-friends-influence-people-book-summary-pdf/"><strong>CLICK TO TWEET</strong></a></p><h3 id="edc38f08-d4c6-412f-aa27-d5eb08f31416" class=""><strong>Be respectful of peoples opinions.</strong></h3><p id="fede88a2-2db1-45f0-9fe9-0067da72d0a7" class="">It’s important to remember that everyone is entitled to their own opinions. And Carnegie emphasises the importance of never telling someone they are wrong. Whether it’s your spouse, a colleague or a customer. Even if you disagree, don’t tell them they are wrong as your only going to rile them up. Remain diplomatic and you will find it easier to get your own point across.</p><h3 id="8250f1b0-78d7-4518-bea5-00bd1661958c" class=""><strong>Admit it when you are wrong</strong></h3><p id="3263ec2a-739f-4c66-a6e9-bd452163201c" class="">It happens to the best of us, we are all wrong sometimes. And Carnegie recommends that if you are wrong, admit it as quickly and emphatically as possible. Being honest is a trait that everyone admires, and by admitting that you are wrong, people will respect you and trust you. If you instantly put up a defense, then you’re only going to look bad.</p><blockquote id="82af9ca0-f826-49df-a697-318f057cb382" class="">”By fighting you never get enough, but by yielding you get more than you expected.”</blockquote><h3 id="790096e4-64d1-434b-bd1f-490f4505f251" class=""><strong>Be friendly</strong></h3><p id="38994f60-8245-4b63-b6e5-d32df17ce7a1" class="">There are two ways you can approach any new situation or any new person. You can be friendly, warm and welcoming. Or cold, unfriendly and unapproachable. People are more likely to respond how you want them to if you are friendly and kind. It’s a no-brainer.</p><p id="f0e10359-c10f-429b-8bd9-d7534c0ea1ae" class="">Carnegie uses the example of Greek slave Aesop. He taught truths about human nature that remain true today:</p><blockquote id="5df5f8f7-f73c-4b27-ace3-f70879cd503d" class="">”The friendly approach and appreciation can make people change their minds more readily than all the bluster and storming in the world.”</blockquote><h3 id="f2b00ba5-8e1c-40ef-85cc-ad4b73f050b4" class=""><strong>Yes, Yes!</strong></h3><p id="524599a2-fcdb-4b4b-9581-95ecc999598b" class="">The aim of the game is to get the other person saying “yes, yes” immediately. Carnegie refers back to the “Socratic Method.” Socrates prompted his rival with a question that he knew they would have to agree. He would continue in this way, one question after another. Before his rival would find themselves agreeing to something they might never have before.</p><h3 id="e31da01e-3654-4076-a65c-3aa4fd62e839" class=""><strong>Let them talk</strong></h3><p id="7cd26285-6ec7-4c30-99d3-50aa9fcd8e7c" class="">As humans, we love the sound of our own voices. So Carnegie recommends you let the other person talk about themselves as much as possible. You’ll find them telling you all about their business and any problems they have. Prompt the conversation my asking questions.</p><p id="43b9a110-c1ec-46cd-bb1b-d6f5f21118aa" class="">The key is to not interrupt, Carnegie stresses the importance of patient listening, and be sincere, be genuinely interested so that they can feel comfortable to truly express themselves.</p><h3 id="bfbb3e0d-1406-40a3-98a1-faa149f61e2c" class=""><strong>It’s their idea</strong></h3><p id="33aece72-c517-4f9e-9676-8e5a8d00a268" class="">The seventh principle from Carnegie is to let the other person feel that the idea is theirs. Don’t be the person who constantly has all of the ideas and opinions, and who tries to force them on other people.</p><blockquote id="ef084516-26b1-4831-a55d-5d05a8e6411c" class="">”Isn&#x27;t it wiser to make suggestions – and let the other person think out the conclusion?”</blockquote><h3 id="59fc3c04-e5fb-41ac-a1df-ae956d46c1d9" class=""><strong>See things from their point of view</strong></h3><p id="75a80f01-f02f-4a49-a9fa-7abab5ae1213" class="">In their own minds, everyone is right. Try to understand them, see what makes them tick, and what has lead them to believe that their point of view is the correct one.</p><blockquote id="1e5cc670-8ce2-4d93-a0c3-92beb95a1ed0" class="">”Don&#x27;t condemn them. Any fool can do that. Try to understand them. Only wise, tolerant, exceptional people even try to do that.”</blockquote><p id="d31aa005-735d-4c9d-bb99-472e76c074dc" class="">Put yourself in their shoes, take on their experiences and you might be led to see why they are the way they are and why they do the things they do.</p><h3 id="3e161582-9e01-4825-87f1-54ca78decb34" class=""><strong>Be sympathetic</strong></h3><p id="213bab04-902b-47f3-9768-6dda01fa51c3" class="">Carnegie encourages us to always be sympathetic to other peoples ideas, feelings and desires. To them, these are precious. If someone explains a tricky situation that they are in, that has them feeling down, the best way to respond is to tell them that you are not at all surprised they feel the way they do and that if you were in their position, you expect you’d feel the same. Make them feel not alone. And be sincere.</p><h3 id="c798f86f-a6e7-45d7-b765-31e05cb2ac6c" class=""><strong>Appeal to nobler motives</strong></h3><p id="ca59e0bb-4cee-48a5-a01e-f71d0dd087df" class="">When considering new people, it’s best to assume that they are honest, upfront and will be truthful. It’s more likely, that proceeding with this attitude that you will be pleasantly rewarded. Carnegie explains that there are only a few exceptions to the rule, and those who aren’t necessarily honest, upfront and truthful will likely be shocked and possibly react in a way that might surprise you when not treated like a criminal. Innocent until proven guilty as they say!</p><h3 id="972e65cf-b611-4557-8db7-9cfc2c75a215" class=""><strong>Dramatise your ideas</strong></h3><p id="25e1eb4b-67a4-4bb2-a065-03e03ca71bee" class="">With the media saturation we are now used to, with TV, movies etc. we have become accustomed to expect drama. Simply telling the truth isn’t going to impress us. Carnegie encourages us to expand upon the truth, make it dramatic, vivid and interesting, act as if you are telling a wonderful story. And this is how you’ll sell your ideas. Make everyone visualise what you&#x27;re trying to sell. They’ll be a lot more likely to buy into the idea than if you simply told them the basic facts.</p><h3 id="2aac51cd-ecdb-4335-901f-3d0918a88a8d" class=""><strong>Throw down a challenge.</strong></h3><p id="69a96c0b-9e57-4492-94db-701c8efd4f7a" class="">The twelfth principle of Carnegie&#x27;s tips to get people to win people into your way of thinking is to throw down a challenge.</p><p id="9cb77800-8753-48e2-92ad-5fc76bef9728" class="">As humans, we have a love for the game, for competition, for a challenge, a chance to prove ourselves.</p><blockquote id="f6c0afb0-ae90-4e46-a85d-22f57715f1fc" class="">”The chance for self-expression. The chance to prove his or her worth, to excel, to win. That is what makes foot-races and hog-calling and pie-eating contests. The desire to excel. The desire for a feeling of importance.”</blockquote><h2 id="22775e7f-91fb-479b-a3b8-d181d19d0b95" class=""><strong>BE A LEADER: HOW TO CHANGE PEOPLE WITHOUT GIVING OR AROUSING RESENTMENT</strong></h2><p id="a120242d-9571-45da-9bc3-05a5d64676f9" class="">The last concept in Carnegie&#x27;s book discusses how to change people without arousing resentment, it’s about how to be an effective leader. The 9 key principles he covers are:</p><ol type="1" id="cd9ade5c-da94-4810-9851-d212fcaccfc0" class="numbered-list" start="1"><li>Begin with praise and honest appreciation.</li></ol><ol type="1" id="9608b746-09c0-4fdd-b9e7-22d39ca25f35" class="numbered-list" start="2"><li>Call attention to people’s mistakes indirectly.</li></ol><ol type="1" id="0a1a3e37-2536-4660-a16c-6f5d1e0409c0" class="numbered-list" start="3"><li>Talk about your own mistakes before criticising other people.</li></ol><ol type="1" id="0159da04-6e25-4627-a57f-8398a1f0a473" class="numbered-list" start="4"><li>Ask questions instead of giving direct orders.</li></ol><ol type="1" id="e584c1a2-3a31-408d-af2b-1ce76547d3f3" class="numbered-list" start="5"><li>Let the other person save face.</li></ol><ol type="1" id="275eda47-fe6c-45c3-b727-3d1591c0cb1c" class="numbered-list" start="6"><li>Praise the slightest improvement and praise every improvement.</li></ol><ol type="1" id="b82c0dfb-f540-40af-80ef-f35d2df069db" class="numbered-list" start="7"><li>Give the other person a fine reputation to live up to.</li></ol><ol type="1" id="10b80c39-9ec8-40f8-b52d-4490e3ddf8c0" class="numbered-list" start="8"><li>Use encouragement, make faults seem easy to correct.</li></ol><ol type="1" id="d34317b6-1630-426e-bd56-bb2138c8af3a" class="numbered-list" start="9"><li>Make the other person feel happy about doing the thing you suggested.</li></ol><h3 id="b309338c-0e96-459a-9e8d-a4556bc110fc" class=""><strong>Honest appreciation and praise</strong></h3><p id="4bca7de4-5ef3-4c87-924b-c83430afdb4e" class="">Begin an interaction with praise and honest appreciation. It will immediately give the other person a sense of pride and newfound confidence. They will be warmed to you and more willing to take on what you are about to suggest.</p><blockquote id="e169e697-304f-49ae-8007-12d60c2e3613" class="">”Beginning with praise is like the dentist who begins his work with Novocain. The patient still gets a drilling, but the Novocain is pain-killing.”</blockquote><h3 id="ca64ee9c-c527-42b9-a59b-f53f4bb1226a" class=""><strong>Be indirect when talking about mistakes</strong></h3><p id="d351d81b-d9a5-4940-90fb-768bd025452a" class="">This follows on from the previous principle, it’s great to start with praise and appreciation, however if you end that statement with the word “but” and then move on to discuss their mistake, you undo all the good you did with the first statement. If you can be indirect when discussing a mistake, a person who is sensitive will accept it better and learn. Direct criticism works on some people, but the majority of us are too afraid to hear this.</p><h3 id="4e1f4047-950a-4ad4-ace3-f4576984a205" class=""><strong>Admit your own mistakes</strong></h3><p id="afca4311-41d5-4520-a9b7-4cc67fd87589" class="">We are all human, and no one on this earth has ever been perfect. We’ve all made mistakes. Carnegie suggests admitting your own mistakes before you move on to talk about someone else’s. Perhaps phrase it in a way to say you can see why they made the error, it’s something you yourself have done in the past. Carnegie believes that this will be a successful approach in convincing someone to change their behaviour.</p><h3 id="97f61671-1f6a-486d-ad6d-ca63667827cb" class=""><strong>Ask questions, don’t give orders.</strong></h3><p id="eb7fd2a2-e4b6-4e0e-bf68-429c649fa982" class="">It’s easy to feel like you need to boss people around, that you need to tell them exactly what to do and when to do it. But Carnegie explains that in order to actually get people to accelerate their work, explaining a situation to your staff and asking them what they think is the best way to deal with it is a better approach.</p><p id="27f1cc0e-87a3-4092-89dc-e0bf5412c171" class="">This puts the responsibility into their hands, they’ll be able to come up with ideas and consequently push through the work to get more done.</p><h3 id="343642bd-a73a-4031-a66a-27f05309eedc" class=""><strong>Let them save face</strong></h3><p id="5945b244-9b39-4955-9e0a-920c819e2070" class="">Nobody likes to feel shamed, and there’s no need to shame another person. You’re only doing damage to their ego. Regardless of how wrong they are, you don’t want to be the one to affect their sense of self and pride.</p><blockquote id="49dd9c23-c869-4a0a-a8f5-0ffb939adcfb" class="">”What matters is not what I think of him, but what he thinks of himself. Hurting a man in his dignity is a crime.”CLICK TO TWEET</blockquote><h3 id="83623a75-5336-4bd6-a58a-db880bf589db" class=""><strong>Always be praising</strong></h3><p id="8aea8508-d09f-49bf-9f7f-64cb6f54f958" class="">People respond better when they feel good about themselves, and this is why Carnegie encourages you to praise even the slightest improvement and ensure that every improvement is recognised appropriately.</p><blockquote id="8a0c08be-3438-4cd9-8f34-5d1b4ce7de8a" class="">”Talk about changing people. If you and I will inspire the people with whom we come in contact with a realization of the hidden treasures they possess, we can do far more than change people. We can literally transform them.”</blockquote><p id="2fce98c6-9b04-4e91-ab73-69478d9e196b" class="">It’s pretty clear that when to criticise someone, you&#x27;re knocking them down, affecting their self-confidence and they are likely to recede and work worse, not better. But by praising someone, you are using your power to lift them up, build their confidence and give them the ability to work harder and better. People are able to work to their full potential if they feel recognised and appreciated.</p><h3 id="1f849ba6-8b40-4fb4-8e9b-2592864245d6" class=""><strong>Reputation</strong></h3><p id="1577acb0-4632-46f4-972d-ea6c601f14d9" class="">Carnegie encourages you to give people a fine reputation to look up to. This one’s pretty obvious, lead by example. Give people a reason to look up to you, give them the desire to want to live up to your reputation.</p><blockquote id="44f7f265-a8ad-457f-b03a-f6529795d643" class="">”Give them a fine reputation to live up to, and they will make prodigious efforts rather than see you disillusioned.”</blockquote><h3 id="e2efb8f7-409a-4dec-b4f2-c8d22be296a0" class=""><strong>Make it easy to fix</strong></h3><p id="c5b41281-db77-4fde-a023-05a94fff0330" class="">Carnegie explains that in the situation that someone you are dealing with has done something dumb or stupid, you should never directly tell them that. This is only going to destroy their desire to improve. Instead, you need to actually encourage them, make it seem like there’s an easy way to fix the situation, something they can do themselves. This way, they will feel supported and encouraged and will go above and beyond to fix the situation.</p><h3 id="2e317ef3-291e-4f1e-a851-c70f33e956a3" class=""><strong>Make them happy</strong></h3><p id="9ff9a27f-ff8d-4bc3-9b19-5cb19794753f" class="">The last principle from Carnegie encourages you to make the other person feel happy about doing something. If they are happy to do it, then they are more likely to actually proceed and to do a really good job. Get them excited about it, inspire a little passion in them so they can approach a task with happiness and a drive to do well.</p><h2 id="cd00d769-128b-4090-bd0d-df07ab722a7a" class=""><strong>CONCLUSION</strong></h2><h3 id="5e701bc1-f58f-42a7-a143-28507e74bd87" class=""><strong>Key Takeaways</strong></h3><ul id="d700333d-b905-4d7e-b2a9-923a959e735f" class="bulleted-list"><li style="list-style-type:disc">It’s important to try and understand other people, what makes them tick.</li></ul><ul id="68bda053-50a1-4dc2-9864-6af076546388" class="bulleted-list"><li style="list-style-type:disc">Try to see things from other people’s perspective. Put yourself in their shoes.</li></ul><ul id="c47d3683-060f-41c1-868a-f26697c791f4" class="bulleted-list"><li style="list-style-type:disc">Always be honest and upfront.</li></ul><ul id="1a21fdf8-6622-4361-bcc1-3a4abedc44ff" class="bulleted-list"><li style="list-style-type:disc">Learn how to be a good listener.</li></ul><ul id="7cb30790-91fb-42a4-b365-c3b1e04cc085" class="bulleted-list"><li style="list-style-type:disc">Avoid arguments at all costs.</li></ul><ul id="b0348417-e1d8-4b31-af15-5f21c095bbce" class="bulleted-list"><li style="list-style-type:disc">Accept that people may have different opinions to you.</li></ul><ul id="c994a6ae-79d5-49c1-a896-283d861648db" class="bulleted-list"><li style="list-style-type:disc">Accept and acknowledge your own mistakes</li></ul><ul id="ff192a3b-6cc8-4317-9fd4-7b84a13383f0" class="bulleted-list"><li style="list-style-type:disc">Encouragement and praise are essential in getting people to do things for you.</li></ul><ul id="644c6368-7be5-4044-bc34-5796b0e414b1" class="bulleted-list"><li style="list-style-type:disc">Don’t give orders, instead ask questions.</li></ul><ul id="daae5e24-05b7-49ef-b891-6cb69038738b" class="bulleted-list"><li style="list-style-type:disc">Never embarrass someone else, let them keep their pride intact.</li></ul><h3 id="d9f75fcb-68d2-4634-89fc-668a32e983be" class=""><strong>Action Steps</strong></h3><ul id="d1d2392d-d935-42ed-8aee-6d61a384a7e0" class="bulleted-list"><li style="list-style-type:disc">If you’re a leader, try and assess how you currently handle your employees or colleagues. Are there any new techniques you can start applying.</li></ul><ul id="5122afc9-bc2f-4c83-a9df-f0d679f4a8b8" class="bulleted-list"><li style="list-style-type:disc">When you feel like telling someone off or criticising them, try the opposite approach. See what happens</li></ul><ul id="35dac618-5486-47da-889a-b0dbda71a87c" class="bulleted-list"><li style="list-style-type:disc">Really work hard to put yourself in other people’s shoes, see the world from their perspective and it will help you understand them, and understand how to get them to do things for you.</li></ul><ul id="8b11505c-2726-4815-b98c-b5dbac8d099d" class="bulleted-list"><li style="list-style-type:disc">Try to get to know your colleagues and employee’s, know their kids names, know what they are interested in and talk in terms of their interests.</li></ul></div></article></body></html>
